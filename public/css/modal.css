@@ -278,6 +278,9 @@ font-family: 'Lato';
   background-repeat: no-repeat;
   background-position: center;
 }
+.flex_container {
+  background-color: rgba(0, 0, 0, 0.4)
+}
 .aboutUs {
   background-image: url(../images/aboutUs.png);
   background-size:cover;
