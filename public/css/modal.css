@@ -278,8 +278,15 @@ font-family: 'Lato';
   background-repeat: no-repeat;
   background-position: center;
 }
+.second{
+  background-image: url(../images/opt2.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .flex_container {
   background-color: rgba(0, 0, 0, 0.4)
+  
 }
 .aboutUs {
   background-image: url(../images/aboutUs.png);
@@ -322,4 +329,16 @@ list-style-type:decimal;
 margin-left:20px;
 font-family: "DM Sans", sans-serif;
 }
+#slyda button {
+  background-color: #02AD64;
+  border-radius: 20px;
+  font-family: 'DM Sans';
+  color: white;
+
 }
+}
+.slider {
+  transition: transform 0.5s ease;
+  display: flex;
+}
+

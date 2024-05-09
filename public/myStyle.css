@@ -558,6 +558,22 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
@@ -619,6 +635,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -653,6 +673,18 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .w-\[100\%\] {
@@ -693,6 +725,18 @@ video {
 
 .w-\[450px\] {
   width: 450px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[98\.8vw\] {
+  width: 98.8vw;
 }
 
 .w-full {
@@ -775,6 +819,10 @@ video {
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .pb-5 {
@@ -924,12 +972,6 @@ video {
   vertical-align: middle;
 }
 
-@media not all and (min-width: 1536px) {
-  .max-2xl\:w-\[700px\] {
-    width: 700px;
-  }
-}
-
 @media not all and (min-width: 1024px) {
   .max-lg\:text-\[20px\] {
     font-size: 20px;
@@ -937,10 +979,6 @@ video {
 }
 
 @media not all and (min-width: 800px) {
-  .max-md\:w-\[500px\] {
-    width: 500px;
-  }
-
   .max-md\:w-\[70px\] {
     width: 70px;
   }
@@ -951,12 +989,24 @@ video {
 }
 
 @media not all and (min-width: 640px) {
-  .max-sm\:w-\[340px\] {
-    width: 340px;
+  .max-sm\:w-\[300px\] {
+    width: 300px;
   }
 
-  .max-sm\:w-\[50\%\] {
-    width: 50%;
+  .max-sm\:w-full {
+    width: 100%;
+  }
+
+  .max-sm\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .max-sm\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .max-sm\:w-\[200px\] {
+    width: 200px;
   }
 
   .max-sm\:justify-center {
@@ -967,8 +1017,8 @@ video {
     padding-right: 1.25rem;
   }
 
-  .max-sm\:text-center {
-    text-align: center;
+  .max-sm\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .max-sm\:text-\[17px\] {
@@ -977,6 +1027,10 @@ video {
 
   .max-sm\:text-\[13px\] {
     font-size: 13px;
+  }
+
+  .max-sm\:text-\[15px\] {
+    font-size: 15px;
   }
 }
 
@@ -1005,10 +1059,6 @@ video {
     width: 20px;
   }
 
-  .xs\:w-\[300px\] {
-    width: 300px;
-  }
-
   .xs\:w-\[80\%\] {
     width: 80%;
   }
@@ -1029,10 +1079,6 @@ video {
 @media (min-width: 640px) {
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
-  }
-
-  .sm\:mb-8 {
-    margin-bottom: 2rem;
   }
 
   .sm\:mt-1 {

@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="../css/modal.css" />
     
     <link rel="stylesheet" href="../css/tailwind.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style.css" /> 
     <link rel="stylesheet" href="../myStyle.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -20,7 +20,45 @@
         }
       }
     </script> 
+ <style type="text/css">
 
+  #slyda {
+    overflow: hidden;
+    
+  }
+  #slyda figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+    display: flex;
+  }
+  #slyda figure div {
+    
+    float: left;
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    40% {
+      left: 0%;
+    }
+    50% {
+      left: -100%
+    }
+    90% {
+      left: -100%;
+    }
+    100% {
+      left: -200%;
+    }
+    
+
+  }
+ </style>
 </head>
 <body>
   <header>
@@ -43,23 +81,88 @@
   </nav>
 </header>
 
+<section class="mt-24 h-auto lg:h-[100vh]">
+  <div id="slyda" class="mt-24 h-auto lg:h-[100vh]">
+    <figure>
+      <div class="w-[98.8vw] h-auto lg:h-[100vh]">
+      <img src="../images/careerPic-modified1.png" class=" relative"/>
+      <div class="absolute top-0 left-0 ml-5">
+        
+      <h1 class="mt-6 lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
+      <p class=" text-white mb-3 md:mb-8 max-sm:text-[15px] text-[20px] myFont ">Be a part of the talented team driving our <br /> innovative efforts amd contribute to <br /> shaping the future.</p>
+     
 
-<section class="first  h-auto lg:h-[100vh] mt-24 ">
-    <div class=" flex_container flex px-5 w-[100%]  md:py-11 h-auto lg:h-[100vh]">
-            <div class="align-text-top md:w-[60%] xs:w-[100%] flex flex-col xs:justify-center md:justify-start  lg:mt-14">
-              <h1 class="lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
-              <p class="text-white mb-3 md:mb-8 max-md:text-[16px] text-[20px] myFont max-sm:w-[300px] w-[415px]">Be a part of the talented team driving our <br /> innovative efforts amd contribute to <br /> shaping the future.</p>
-             
+      <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] max-sm:text-[15px] md:text-[20px] homeBtn max-sm:w-[200px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
+    
+      </div>
+     </div>
 
-              <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] sm:text-[16px] md:text-[20px] homeBtn w-[180px] sm:w-[230px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
-              
-            </div>
-            
-            <div class="md:w-[50%]  xs:w-[10%]">
-            </div>
-            </div>
+      <div class="w-[98.8vw] h-auto lg:h-[100vh]">
+      <img src="../images/opt2-modified.png" class=" relative"/>
+      <div class="absolute top-0 left-100  ml-5">
+        
+      <h1 class="mt-6 lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
+      <p class=" text-white mb-3 md:mb-8 max-sm:text-[15px] text-[20px] myFont ">Be a part of the talented team driving our <br /> innovative efforts amd contribute to <br /> shaping the future.</p>
+     
 
+      <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] max-sm:text-[15px] md:text-[20px] homeBtn max-sm:w-[200px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
+      
+      </div>
+     </div>
+
+     <div class="w-[98.8vw] h-auto lg:h-[100vh]">
+      <img src="../images/careerPic-modified1.png"  class="relative"/>
+      <div class="absolute top-0 left-200 ml-5">
+        
+      <h1 class="mt-6 lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
+      <p class=" text-white mb-3 md:mb-8 max-sm:text-[15px] text-[20px] myFont ">Be a part of the talented team driving our <br /> innovative efforts amd contribute to <br /> shaping the future.</p>
+     
+
+      <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] max-sm:text-[15px] md:text-[20px] homeBtn max-sm:w-[200px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
+      
+      </div>
+     </div>
+    </figure>
+  </div>
 </section>
+<!-- <section class="mt-24 slider w-[50%]">
+  <div class="flex w-[50%]">
+  <section class="first h-auto lg:h-[100vh]">
+    <div class=" flex_container flex px-5 w-[100%]  md:py-11 h-auto lg:h-[100vh]">
+      <div class="align-text-top md:w-[60%] xs:w-[100%] flex flex-col xs:justify-center md:justify-start  lg:mt-14">
+        <h1 class="lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
+        <p class="text-white mb-3 md:mb-8 max-md:text-[16px] text-[20px] myFont max-sm:w-[300px] w-[415px]">Be a part of the talented team driving our <br /> innovative efforts amd contribute to <br /> shaping the future.</p>
+       
+
+        <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] sm:text-[16px] md:text-[20px] homeBtn w-[180px] sm:w-[230px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
+        
+      </div>
+      
+      <div class="md:w-[50%]  xs:w-[10%]">
+      </div>
+      </div>
+    </section>
+  
+   
+    
+      <section class="second  h-auto lg:h-[100vh]">
+        <div class=" flex_container flex px-5 w-[100%]  md:py-11 h-auto lg:h-[100vh]">
+                    <div class="align-text-top md:w-[60%] xs:w-[100%] flex flex-col xs:justify-center md:justify-start  lg:mt-14">
+                      <h1 class="lg:mt-12 font-bold mb-3 lg:mb-6 text-white text-[30px] sm:text-[40px] md:text-[50px] myFont">Join our Journey </h1>
+                      <p class="text-white mb-3 md:mb-8 max-md:text-[16px] text-[20px] myFont max-sm:w-[300px] w-[415px]">Be a part of the talented team driving our <br /> innovative efforts amd contribute to <br /> shaping the future.</p>
+                     
+        
+                      <button onclick="scrollToSection('jobRoles')" class=" font-myFont text-[15px] sm:text-[16px] md:text-[20px] homeBtn w-[180px] sm:w-[230px] h-12 lg:w-[300px] lg:h-16 xs:mb-8">See Available Roles</button>
+                      
+                    </div>
+                    
+                    <div class="md:w-[50%]  xs:w-[10%]">
+                    </div>
+                    </div>
+      </section>
+ </div>
+</section> -->
+
 
 <section id="jobRoles" class="jobRoles py-[100px]">
 <div class="roles flex flex-col gap-10 py-10 sm:py-16">
@@ -140,5 +243,6 @@
           </section>
 
             <script src="../menu.js"></script>
+            <!-- <script src="../slider.js"></script> -->
 </body>
 </html>
