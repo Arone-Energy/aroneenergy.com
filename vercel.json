@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "https://www.aroneenergy.com", "permanent": true },
+    { "source": "/(.*)", "destination": "https://www.aroneenergy.com/$1", "permanent": true }
+  ]
+}
