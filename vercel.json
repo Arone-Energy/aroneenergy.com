@@ -1,22 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/",
-      "destination": "https://www.aroneenergy.com/",
-      "permanent": true
-    },
-    {
       "source": "/(.*)",
-      "destination": "https://www.aroneenergy.com/$1",
-      "permanent": true
-    },
-    {
-      "source": "http://aroneenergy.com/",
-      "destination": "https://www.aroneenergy.com/",
-      "permanent": true
-    },
-    {
-      "source": "http://aroneenergy.com/(.*)",
       "destination": "https://www.aroneenergy.com/$1",
       "permanent": true
     }
