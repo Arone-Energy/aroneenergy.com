@@ -1,0 +1,11 @@
+.About-shad1 {
+    box-shadow: 0px 29px 64px 0px #8C8C8C1A,
+                0px 116px 116px 0px #8C8C8C17,
+                0px 261px 156px 0px #8C8C8C0D,
+                0px 463px 185px 0px #8C8C8C03,
+                0px 724px 203px 0px #8C8C8C00;
+ }
+
+ .About-bod1 {
+    border-radius: 80px 80px 0px 0px;
+  }

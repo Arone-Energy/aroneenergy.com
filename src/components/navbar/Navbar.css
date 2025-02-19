@@ -1,0 +1,15 @@
+    /* BORDERS */
+.bod1 {
+  border: 0.5px solid #BEBEBE;  
+}
+.bod2 {
+    border: 0.59px solid #CBCBCB
+}
+
+    /* COLOURS */
+.light-ash {
+    background: #F9F7F7;
+}
+.button-green {
+    background: #0BAC67;
+}
