@@ -9,8 +9,8 @@ const Aboutus = () => {
     <div>
         <div className="">
         <div className='relative mb-[5rem]'>
-            <img src={AboutBG} alt="" className='About-bod1' />
-        <div className="absolute top-0 left-[19%] About-shad1 mb-[5rem]">
+            <img src={AboutBG} alt="" className='About-bod1 w-full' />
+        <div className="absolute top-0 lg:left-[19%] 2xl:left-[17%]  About-shad1 mb-[5rem]">
             <div className="pt-[0.7rem]">
             <Navbar />
             </div>
@@ -26,16 +26,16 @@ const Aboutus = () => {
 
             </div>
              <div className="flex flex-col gap-[3rem] items-center mb-[10rem]">
-                <div className="lg:w-[1174px] 2xl:w-[1278px] lg:h-[183.4px] 2xl:h-[208px] bg-white About-shad1 rounded-[15px] flex justify-center items-center ">
+                <div className="lg:w-[1174px] 2xl:w-[1278px] lg:h-[183.4px] 2xl:h-[208px] bg-white About-shad1 rounded-[15px] flex pl-[3rem] 2xl:pl-[2rem] items-center ">
                     <p className="ral-400 lg:text-[30px] 2xl:text-[36px] lg:leading-[36px] 2xl:leading-[42px] lg:w-[1050px] 2xl:w-[1217px]">We manufacture low-cost, stand-alone solar grid systems and leveraging smart financing models to reduce upfront costs and increase electricity access.</p>
                 </div>
 
-                <div className="lg:w-[1174px] 2xl:w-[1278px] lg:h-[97px] 2xl:h-[111px] bg-white About-shad1 rounded-[15px] flex justify-center items-center">
+                <div className="lg:w-[1174px] 2xl:w-[1278px] lg:h-[97px] 2xl:h-[111px] bg-white About-shad1 rounded-[15px] flex pl-[3rem] 2xl:pl-[2rem] items-center">
                     <p className="ral-400 lg:text-[30px] 2xl:text-[36px] lg:leading-[36px] 2xl:leading-[42px] lg:w-[970px] 2xl:w-[1217px] ">Our vision is to power every home with green electricity.</p>
                 </div>
 
-                <div className="lg:w-[1174px] 2xl:w-[1278px] lg:h-[183.4px] 2xl:h-[208px] bg-white About-shad1 rounded-[15px] flex justify-center items-center ">
-                    <p className="ral-400 lg:text-[30px] 2xl:text-[36px] lg:leading-[36px] 2xl:leading-[42px] lg:w-[1050px] 2xl:w-[1217px]">With this, we are driving the transition from fossil fuel powered generators to renewable energy in line with the Sustainable Development Goal 7 of ensuring access to affordable, reliable, sustainable, and modern energy.</p>
+                <div className="lg:w-[1174px] 2xl:w-[1278px] lg:h-[183.4px] 2xl:h-[208px] bg-white About-shad1 rounded-[15px] flex pl-[3rem] 2xl:pl-[2rem] items-center ">
+                    <p className="ral-400 lg:text-[30px] 2xl:text-[36px] lg:leading-[36px] 2xl:leading-[42px] lg:w-[1050px] 2xl:w-[1230px]">With this, we are driving the transition from fossil fuel powered generators to renewable energy in line with the Sustainable Development Goal 7 of ensuring access to affordable, reliable, sustainable, and modern energy.</p>
                 </div>
             </div>
 

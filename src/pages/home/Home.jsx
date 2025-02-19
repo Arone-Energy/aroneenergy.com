@@ -66,14 +66,14 @@ const Home = () => {
             <div className="p-[5rem] Home-shad1 Home-bod1 lg:w-[93%] 2xl:w-[93%] lg:h-[587px] 2xl:h-[667px] bg-white flex">
                 <div className="w-[50%] relative">
                     
-                <img src={Circles} alt="" className='lg:h-[447.92px] lg:w-[447.92px] 2xl:w-full 2xl:h-full' />
+                <img src={Circles} alt="" className='lg:h-[447.92px] lg:w-[447.92px] 2xl:w-[509px] 2xl:h-[509px]' />
                 <div className="absolute top-[5.5rem] left-[-5.5rem]">
                     <img src={LuminarPack} alt="" />
                 </div>
                 
                 </div>
-                <div className="w-[50%] ral-600 lg:w-[430px] lg:text-[42px] 2xl:text-[48px] leading-[50px] border-l-[1px] border-l-gray-300 pl-[4rem] flex flex-col gap-[3rem]">
-                <p className="mt-[2rem]">Super Compatible and Super Strong</p>
+                <div className="w-[50%] ral-600 lg:w-[430px] 2xl:w-[500px] lg:text-[42px] 2xl:text-[48px] leading-[50px] border-l-[1px] border-l-gray-300 pl-[4rem] flex flex-col gap-[3rem]">
+                <p className="mt-[2rem] ">Super Compatible and Super Strong</p>
                 <p className="ral-400 lg:w-[446.17px] 2xl:w-[507px] lg:text-[28px] 2xl:text-[32px] lg:leading-[33px] 2xl:leading-[37.57px] ">Our chassis securely houses the battery and power electronics, ensuring safety and incredible portability. The new Luminar features top-quality materials for performance and longevity.</p>
                 
                 </div>
@@ -86,8 +86,8 @@ const Home = () => {
                 <p className='ral-400 lg:text-[28px] 2xl:text-[32px] lg:leading-[33px] ' >The Luminar 2.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
             </div>
 
-            <div className="border-t-[1px] border-t-gray-300 mt-[3rem] w-[60%]">
-                <img src={LuminarLifespan} alt="" />
+            <div className="border-t-[1px] border-t-gray-300 mt-[3rem] w-[70%] flex justify-center">
+                <img src={LuminarLifespan} alt="" className='w-[80%] ' />
             </div>
 
             <div className="flex justify-between w-full px-[5rem] my-[3rem]">
@@ -95,8 +95,8 @@ const Home = () => {
                     <p className="mt-[5.2rem] ral-600 2xl:w-[317px] lg:w-[278.96px] lg:text-[42px] 2xl:text-[48px] text-center lg:leading-[45px] 2xl:leading-[56px]">4x POWER EFFICIENCY</p>
                     <div className=" relative flex justify-center">
                     
-                <img src={CircleCut} alt="" className=' lg:w-[80%] 2xl:w-full 2xl:h-full' />
-                <div className="absolute top-[4rem] left-[8.5rem]">
+                <img src={CircleCut} alt="" className=' lg:w-[80%] 2xl:w-full 2xl:h-[90%]' />
+                <div className="absolute top-[4rem] 2xl:top-[6rem] left-[8.5rem] 2xl:left-[7rem]">
                     <img src={PE} alt="" className='w-[75%]' />
                 </div>
                 
@@ -106,8 +106,8 @@ const Home = () => {
                     <p className="mt-[5.2rem] ral-600 2xl:w-[413px] lg:w-[350px] lg:text-[42px] 2xl:text-[48px] text-center lg:leading-[45px] 2xl:leading-[56px] ">Core 2.0 SMD integrated circuit</p>
                     <div className=" relative flex justify-center">
                     
-                <img src={CircleCut} alt="" className=' lg:w-[80%] 2xl:w-full 2xl:h-full' />
-                <div className="absolute top-[5rem] left-[8.5rem]">
+                <img src={CircleCut} alt="" className=' lg:w-[80%] 2xl:w-full 2xl:h-[90%]' />
+                <div className="absolute top-[5rem] 2xl:top-[8rem] left-[8.5rem] 2xl:left-[7rem]">
                     <img src={SMDIC} alt="" className='w-[80%]' />
                 </div>
                 
