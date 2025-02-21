@@ -131,12 +131,13 @@ const Home = () => {
 
         <div className="flex flex-col items-center my-[12rem]">
             <p className="ral-700 lg:text-[70px] 2xl:text-[100px] text-center lg:w-[656px] 2xl:w-[848px] mb-[1rem]">LUMINAR 2.0 ARONE ENERGY </p>
-            <div className="relative">
-                <img src={BG} alt="" className='lg:w-[1219.23px] 2xl:w-[1311px] lg:h-[558.93px] 2xl:h-[601px]'/>
-                <div className="absolute top-[-1.3rem] left-[16%] 2xl:top-0 2xl:left-[18%]  mx-auto" >
-                <iframe src="https://player.vimeo.com/video/932751168?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4" width="840px" height="600px" frameborder="0" allowfullscreen >
+            <div className="">
+               
+                <div className="w-full flex justify-center items-center  mx-auto " >
+                    
+                <iframe src="https://player.vimeo.com/video/932751168?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4" width="840px" height="600px" frameborder="0" allowfullscreen  >
                 </iframe>
-                    {/* <img src={Lum2} alt="" /> */}
+                   
                 </div>
             </div>
         </div>
