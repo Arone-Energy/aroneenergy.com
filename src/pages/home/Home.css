@@ -33,11 +33,17 @@
                    0px 724px 203px 0px #8C8C8C00;
     }
 
-
-
+    
 .inter-700{
         font-family: "Inter", serif;
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
       }
+
+
+@media (max-width:799px) {
+    .Home-bod1 {
+        border-radius: 17px 17px 17px 17px;
+      }
+}
