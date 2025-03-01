@@ -25,10 +25,10 @@ const Careers = () => {
             <div className="w-full flex justify-center ">
             <div className="flex gap-4 px-[1rem] md:px-[3rem] items-center mt-[3rem] md:mt-[5.5rem]">
                 <img src={Pic1} alt="" className='bg-transparent w-[147.58px] h-[135.69px] md:w-[272.8px] 2xl:w-[310px] md:h-[250.8px] 2xl:h-[285px] Careers-shad1 rounded-[30px]' />
-                <img src={Pic2} alt="" className='md:w-[272.8px] 2xl:w-[310px] md:h-[190px] 2xl:h-[216px] Careers-shad1 rounded-[30px] max-md:hidden' />
+                <img src={Pic2} alt="" className='md:w-[272.8px] 2xl:w-[310px] md:h-[190px] 2xl:h-[216px] Careers-shad1 rounded-[30px] hide' />
                 <img src={Pic2Small} alt="" className=' w-[147.58px] h-[135.69px] Careers-shad1 rounded-[30px] md:hidden' />
-                <img src={Pic3} alt="" className='bg-transparent md:w-[272.8px] 2xl:w-[310px] md:h-[250.8px] 2xl:h-[285px] Careers-shad1 rounded-[30px] max-md:hidden'  />
-                <img src={Pic4} alt="" className='md:w-[272.8px] 2xl:w-[310px] md:h-[190px] 2xl:h-[216px] Careers-shad1 rounded-[30px] max-md:hidden' />
+                <img src={Pic3} alt="" className='bg-transparent md:w-[272.8px] 2xl:w-[310px] md:h-[250.8px] 2xl:h-[285px] Careers-shad1 rounded-[30px] hide'  />
+                <img src={Pic4} alt="" className='md:w-[272.8px] 2xl:w-[310px] md:h-[190px] 2xl:h-[216px] Careers-shad1 rounded-[30px] hide' />
             </div>
             </div>
 

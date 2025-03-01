@@ -46,4 +46,34 @@
     .Home-bod1 {
         border-radius: 17px 17px 17px 17px;
       }
+    .flx {
+        display: flex;
+        flex-direction: column ;
+    }
+    .gapp {
+        display: flex;
+        gap: 2.5rem;
+    }
+    .ic {
+        display: flex;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .maxtop {
+        margin-top: -3rem;
+    }
+    .maxtop1 {
+        margin-top: -1.8rem;
+    }
+    .ic1 {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .w100 {
+        width: 100%;
+    }
+    
 }
+

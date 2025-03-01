@@ -47,3 +47,14 @@
   font-weight: 800;
   font-style: normal;
   }
+
+  @media (max-width:799px) {
+    
+    .flx {
+        display: flex;
+        flex-direction: column ;
+    }
+    .hide {
+      display: none;
+  }
+}
