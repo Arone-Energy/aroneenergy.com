@@ -9,9 +9,9 @@ import { IoLocationSharp } from 'react-icons/io5'
 const Footer = () => {
   return (
     <div>
-        <div className="md:h-[550.88px] footer-green max-md:py-[2rem] max-md:px-[1.2rem] md:p-[4rem] ral-400">
+        <div className="md:h-[550.88px] footer-green pad md:p-[4rem] ral-400">
             <div className="mb-[2rem] lg:mb-[4rem]">
-                <img src={Logo} alt="" className='max-md:w-[111.7px] max-md:h-[35px]' />
+                <img src={Logo} alt="" className='logoSize' />
             </div>
             <div className="md:flex text-white justify-between mb-[2rem] md:mb-[5rem] footer">
                 <div className="md:w-[65%] flex justify-between">
@@ -40,8 +40,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 </div>
-                <div className="ral-400 text-[11px] md:text-[21.12px] 2xl:text-[24px] max-md:mt-[3rem]">
-                <p className="ral-600 max-md:text-[12px]  mb-[1rem] md:mb-[2rem]">Follow Us On</p>
+                <div className="ral-400 text-[11px] md:text-[21.12px] 2xl:text-[24px] maxtop">
+                <p className="ral-600 txt  mb-[1rem] md:mb-[2rem]">Follow Us On</p>
                     <ul className='flex md:flex-col gap-[0.5rem] md:gap-[2rem]'>
                     <li><a href='https://www.instagram.com/aroneenergy?igsh=MXg4bmxkbjk0ZWxtaA==' className='flex items-center gap-[2px] md:gap-1'><span><AiFillInstagram className='w-[20px] h-[20px] md:w-[27px] md:h-[27px]'/></span>@aroneenergy</a></li>
                     <li><a href="mailto:info@aroneenergy.com" className='flex items-center gap-[2px] md:gap-1'><span><IoMdMail className='w-[19px] h-[19px] md:w-[27px] md:h-[27px]'/></span>info@aroneenergy.com</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="text-white max-md:border-t-[1px] border-t-white ral-400 text-[13px] md:text-[21.12px] 2xl:text-[24px] max-md:pt-[0.7rem]">Copyright @aroneenergy 2025</div>
+            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] 2xl:text-[24px] ">Copyright @aroneenergy 2025</div>
         </div>
     </div>
   )

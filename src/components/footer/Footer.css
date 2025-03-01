@@ -4,3 +4,32 @@
 .footer li {
     cursor: pointer;
 }
+
+@media (max-width:799px) {
+    
+    .flx {
+        display: flex;
+        flex-direction: column ;
+    }
+    .hide {
+      display: none;
+  }
+  .pad {
+    padding: 2rem 1.2rem;
+  }
+  .logoSize {
+    width: 111.7px;
+    height: 35px;
+  }
+  .maxtop {
+    margin-top: 3rem;
+  }
+  .txt {
+    font-size: 12px;
+  }
+  .bod {
+    border-top: 1px solid white;
+    padding-top: 0.7rem;
+    
+  }
+}
