@@ -51,7 +51,7 @@ const Careers = () => {
                     <div className="Careers-shad1 w-[90%] h-[76.56px] lg:h-[100px] lg:w-[1174px] 2xl:w-[1278px] 2xl:h-[115px] bg-white rounded-[17px] flex items-center justify-between px-[1rem] md:pr-[3rem] ">
                         <div className="">
                             <p className="ral-600 text-[14px] md:text-[20px] 2xl:text-[23.45px] ">Sales Representative</p>
-                            <p className="ral-400 text-[14px] md:text-[15px] 2xl:text-[20px] flex items-center gap-1 "><span><IoLocationSharp className=' lg:h-[21.67px] lg:w-[15.17px] txt-green' /></span>Location : Onsite</p>
+                            <p className="ral-400 text-[14px] md:text-[15px] 2xl:text-[20px] flex items-center gap-1 "><span><IoLocationSharp className=' lg:h-[21.67px] lg:w-[15.17px] txt-green' /></span>Location : Hybrid</p>
                         </div>
                         <div className="">
                         <a href="https://forms.gle/rFTv3FWaRkhDbMjQ6"><button className='text-white w-[94px] h-[24.64px] md:w-[167px] md:h-[40px] 2xl:h-[45.59px] 2xl:w-[189.9px] bgd-green ral-500 lg:text-[17px] rounded-[20px]'>Apply</button></a>                        </div>
@@ -81,7 +81,7 @@ const Careers = () => {
                     <div className="Careers-shad1 w-[90%] h-[76.56px] lg:h-[100px] lg:w-[1174px] 2xl:w-[1278px] 2xl:h-[115px] bg-white rounded-[17px] flex items-center justify-between px-[1rem] md:pr-[3rem] ">
                         <div className="">
                             <p className="ral-600 text-[14px] md:text-[20px] 2xl:text-[23.45px] ">Customer Support</p>
-                            <p className="ral-400 text-[14px] md:text-[15px] 2xl:text-[20px] flex items-center gap-1 "><span><IoLocationSharp className=' lg:h-[21.67px] lg:w-[15.17px] txt-green' /></span>Location : Onsite</p>
+                            <p className="ral-400 text-[14px] md:text-[15px] 2xl:text-[20px] flex items-center gap-1 "><span><IoLocationSharp className=' lg:h-[21.67px] lg:w-[15.17px] txt-green' /></span>Location : Hybrid</p>
                         </div>
                         <div className="">
                         <a href="https://forms.gle/rFTv3FWaRkhDbMjQ6"><button className='text-white w-[94px] h-[24.64px] md:w-[167px] md:h-[40px] 2xl:h-[45.59px] 2xl:w-[189.9px] bgd-green ral-500 lg:text-[17px] rounded-[20px]'>Apply</button></a>                        </div>
