@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Careers from './pages/careers/Careers.jsx';
 import Aboutus from './pages/aboutus/Aboutus.jsx';
+import Investors from './pages/investors/Investors.jsx';
 
 // import Partners from './pages/partners/Partners.jsx';
 // import Contact from './pages/contact/Contact.jsx';
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
    {
     path: "/careers",
     element: <Careers />,
+  },
+  {
+    path: "/investors",
+    element: <Investors />,
   },
   // {
   //   path: "/partners",
