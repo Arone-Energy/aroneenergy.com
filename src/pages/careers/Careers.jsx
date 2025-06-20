@@ -71,7 +71,7 @@ const Careers = () => {
 
                     <div className="Careers-shad1 w-[90%] h-[76.56px] lg:h-[100px] lg:w-[1174px] 2xl:w-[1278px] 2xl:h-[115px] bg-white rounded-[17px] flex items-center justify-between px-[1rem] md:pr-[3rem] ">
                         <div className="">
-                            <p className="ral-600 text-[14px] md:text-[20px] 2xl:text-[23.45px] ">Electronics Engineer</p>
+                            <p className="ral-600 text-[14px] md:text-[20px] 2xl:text-[23.45px] ">Electronics/ Embedded Systems Engineer</p>
                             <p className="ral-400 text-[14px] md:text-[15px]2xl:text-[20px] flex items-center gap-1 "><span><IoLocationSharp className=' lg:h-[21.67px] lg:w-[15.17px] txt-green' /></span>Location : Onsite</p>
                         </div>
                         <div className="">
