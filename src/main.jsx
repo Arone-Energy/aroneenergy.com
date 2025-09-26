@@ -9,6 +9,7 @@ import {
 import Careers from './pages/careers/Careers.jsx';
 import Aboutus from './pages/aboutus/Aboutus.jsx';
 import Investors from './pages/investors/Investors.jsx';
+import Warranty from './pages/warranty/Warranty.jsx';
 
 // import Partners from './pages/partners/Partners.jsx';
 // import Contact from './pages/contact/Contact.jsx';
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/investors",
     element: <Investors />,
+  },
+  {
+    path: "/warranty",
+    element: <Warranty />,
   },
   // {
   //   path: "/partners",

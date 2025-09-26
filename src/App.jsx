@@ -32,7 +32,7 @@ const App = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
-      <div className="md:pt-[0.7rem]">
+      <div className="fixed z-[999] w-full top-0">
       <Navbar />  
       </div>
       

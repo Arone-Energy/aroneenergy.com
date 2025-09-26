@@ -9,13 +9,13 @@ import { IoLocationSharp } from 'react-icons/io5'
 const Footer = () => {
   return (
     <div>
-        <div className="md:h-[550.88px] footer-green pad md:p-[4rem] ral-400">
+        <div className="md:h-[550.88px] footer-green pad py-[4rem] md:px-[2rem] lg:px-[4rem] ral-400">
             <div className="mb-[2rem] lg:mb-[4rem]">
                 <img src={Logo} alt="" className='logoSize' />
             </div>
-            <div className="md:flex text-white justify-between mb-[2rem] md:mb-[5rem] footer">
-                <div className="md:w-[65%] flex justify-between">
-                <div className="ral-400 text-[12px] md:text-[21.12px] 2xl:text-[24px]">
+            <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-4 gap-[1rem] text-white justify-between mb-[2rem] md:mb-[5rem] footer">
+                
+                <div className="fnt-400 text-[12px] md:text-[16px] xl:text-[24px]">
                     <p className="ral-600 mb-[1rem] md:mb-[2rem]">Legal</p>
                     <ul className='flex flex-col gap-[1rem] md:gap-[2rem]'>
                     <li><a>Warranty</a></li>
@@ -23,7 +23,7 @@ const Footer = () => {
                     <li><a>Usage guidelines</a></li>
                     </ul>
                 </div>
-                <div className="ral-400 text-[12px] md:text-[21.12px] 2xl:text-[24px]">
+                <div className="fnt-400 text-[12px] md:text-[16px] xl:text-[24px]">
                 <p className="ral-600 mb-[1rem] md:mb-[2rem]">Support</p>
                     <ul className='flex flex-col gap-[1rem] md:gap-[2rem]'>
                     <li><Link to='/investors'>Investors</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                     
                     </ul>
                 </div>
-                <div className="ral-400 text-[12px] md:text-[21.12px] 2xl:text-[24px]">
+                <div className="fnt-400 text-[12px] md:text-[16px] xl:text-[24px] md:pl-[1rem] lg:pl-[2rem] sm:mt-[2rem] md:mt-0">
                 <p className="ral-600 mb-[1rem] md:mb-[2rem]">Company</p>
                     <ul className='flex flex-col gap-[1rem] md:gap-[2rem]'>
                     <li><Link to='/aboutus'>About Us</Link></li>
@@ -39,17 +39,18 @@ const Footer = () => {
                  
                     </ul>
                 </div>
-                </div>
-                <div className="ral-400 text-[11px] md:text-[21.12px] 2xl:text-[24px] maxtop">
+               
+
+                <div className="fnt-400 text-[11px] md:text-[16px] xl:text-[24px] maxtop">
                 <p className="ral-600 txt  mb-[1rem] md:mb-[2rem]">Follow Us On</p>
-                    <ul className='flex md:flex-col gap-[0.5rem] md:gap-[2rem]'>
+                    <ul className='flex sm:flex-col gap-[0.5rem] md:gap-[2rem]'>
                     <li><a href='https://www.instagram.com/aroneenergy?igsh=MXg4bmxkbjk0ZWxtaA==' className='flex items-center gap-[2px] md:gap-1'><span><AiFillInstagram className='w-[20px] h-[20px] md:w-[27px] md:h-[27px]'/></span>@aroneenergy</a></li>
                     <li><a href="mailto:info@aroneenergy.com" className='flex items-center gap-[2px] md:gap-1'><span><IoMdMail className='w-[19px] h-[19px] md:w-[27px] md:h-[27px]'/></span>info@aroneenergy.com</a></li>
                     <li><a href='https://maps.app.goo.gl/oA1qQPYALSNXU3YR9?g_st=iw' className='flex items-center md:gap-1'><span><IoLocationSharp className='w-[20px] h-[20px] md:w-[27px] md:h-[27px]'/></span>Enugu, Nigeria</a></li>
                     </ul>
                 </div>
             </div>
-            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] 2xl:text-[24px] ">Copyright @aroneenergy 2025</div>
+            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] xl:text-[24px] ">Copyright @aroneenergy 2025</div>
         </div>
     </div>
   )

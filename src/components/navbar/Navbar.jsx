@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
     <div className="w-full flex justify-center  ">
-    <div className=' hidden fixed z-999 ral-300 lg:text-[17px] 2xl:text-[20px] w-[93%] h-[50px] lg:h-[70px] 2xl:h-[90px] rounded-[18px] border-[0.5px] mt-[2rem] light-ash bod1 md:flex items-center justify-between px-[2rem] pr-[4rem]'>
+    <div className=' hidden z-999 ral-300 text-[15px] lg:text-[17px] 2xl:text-[20px] w-full h-[50px] md:h-[90px] lg:h-[100px] 2xl:h-[142px]  border-[0.5px]  light-ash bod1 md:flex items-center justify-between px-[1rem] md:px-[2rem] lg:px-[3rem] lg:pr-[4rem]'>
      <div className="">
     <Link to='/'><img src={Logo} alt="" className='lg:w-[143px] lg:h-[45px]' /></Link>
      </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
       
       </ul>
      </div>
-     <a href='https://paystack.shop/arone-energy'><div className="bod2 button-green flex justify-center items-center rounded-[25px] lg:w-[167px] lg:h-[40px] 2xl:w-[189.9px] 2xl:h-[45.59px] text-white">Buy Now</div></a>
+     <a href='https://paystack.shop/arone-energy'><div className="bod2 button-green flex justify-center items-center md:rounded-[18px] lg:rounded-[25px] md:w-[130px] md:h-[30px] lg:w-[167px] lg:h-[40px] 2xl:w-[189.9px] 2xl:h-[45.59px] text-white ">Buy Now</div></a>
     </div>
 
     
