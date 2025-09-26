@@ -65,14 +65,7 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* <div className="bg-black h-[270px] lg:h-[492.8px] 2xl:h-[560px] w-full my-[2rem] flex justify-center items-center Home-shad1">
-                <div className="w-full h-[270px] lg:w-[985.6px] lg:h-[425.66px] 2xl:w-[1120px] 2xl:h-[483.7px] flex  items-center ">
-                    <video ref={videoRef} loop muted autoPlay playsInline >
-                        <source src={LuminarVideo} typeof='video/mp4' />
-                    </video>
-                </div>
 
-            </div> */}
             
 
             <div className="w-full  mt-[5rem] lg:mt-[7rem] xl:mt-[15rem]">
