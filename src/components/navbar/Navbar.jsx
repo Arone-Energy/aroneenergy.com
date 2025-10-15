@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
     <div className="w-full flex justify-center  ">
-    <div className=' hidden z-999 ral-300 text-[15px] lg:text-[17px] 2xl:text-[20px] w-full h-[50px] md:h-[90px] lg:h-[100px] 2xl:h-[142px]  border-[0.5px]  light-ash bod1 md:flex items-center justify-between px-[1rem] md:px-[2rem] lg:px-[3rem] lg:pr-[4rem]'>
+    <div className=' hidden z-999 ral-300 text-[15px] lg:text-[17px] 2xl:text-[20px] w-full h-[50px] md:h-[90px] lg:h-[100px] 2xl:h-[122px]  border-[0.5px]  light-ash bod1 md:flex items-center justify-between px-[1rem] md:px-[2rem] lg:px-[3rem] lg:pr-[4rem]'>
      <div className="">
     <Link to='/'><img src={Logo} alt="" className='lg:w-[143px] lg:h-[45px]' /></Link>
      </div>

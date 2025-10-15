@@ -13,8 +13,10 @@ const Aboutus = () => {
             <img src={AboutBG} alt="" className='About-bod1 w-full hidden md:block' />
             <img src={AboutBGSmall} alt="" className='About-bod1 w-full block md:hidden' />
         <div className="absolute top-0 lg:left-[19%] 2xl:left-[17%] About-shad1 mb-[5rem]">
-            <div className="md:pt-[0.7rem]">
-            <Navbar />
+            <div className=" flex justify-center items-center">
+            <div className=" fixed w-full md:w-[90%] top-0  md:top-[2rem] md:rounded-[20px] h-[90px] overflow-hidden">
+            <Navbar className=''/>
+            </div>
             </div>
             <div className="flex flex-col items-center w-full">
              <div className="mt-[5rem] md:mt-[16rem] ral-700 text-[37px] md:text-[70px] 2xl:text-[100px] text-white">About Us</div>

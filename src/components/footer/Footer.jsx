@@ -9,7 +9,7 @@ import { IoLocationSharp } from 'react-icons/io5'
 const Footer = () => {
   return (
     <div>
-        <div className="md:h-[550.88px] footer-green pad py-[4rem] md:px-[2rem] lg:px-[4rem] ral-400">
+        <div className=" footer-green pad py-[4rem] md:px-[2rem] lg:px-[4rem] pb-[3rem] ral-400">
             <div className="mb-[2rem] lg:mb-[4rem]">
                 <img src={Logo} alt="" className='logoSize' />
             </div>
@@ -18,9 +18,9 @@ const Footer = () => {
                 <div className="fnt-400 text-[12px] md:text-[16px] xl:text-[24px]">
                     <p className="ral-600 mb-[1rem] md:mb-[2rem]">Legal</p>
                     <ul className='flex flex-col gap-[1rem] md:gap-[2rem]'>
-                    <li><a>Warranty</a></li>
-                    <li><a>Terms & Conditions</a></li>
-                    <li><a>Usage guidelines</a></li>
+                    <li><Link to='/warranty'>Warranty</Link></li>
+                    <li><Link to='/tandc'>Terms & Conditions</Link></li>
+                    <li><Link to='/usage'>Usage guidelines</Link></li>
                     </ul>
                 </div>
                 <div className="fnt-400 text-[12px] md:text-[16px] xl:text-[24px]">
@@ -50,7 +50,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] xl:text-[24px] ">Copyright @aroneenergy 2025</div>
+            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] xl:text-[24px]">Copyright @aroneenergy 2025</div>
         </div>
     </div>
   )

@@ -8,18 +8,24 @@ import Pic4 from '../../assets/careerPic4.png'
 import Pic2Small from '../../assets/careerPic2Small.png'
 import { IoLocationSharp } from 'react-icons/io5'
 import Footer from '../../components/footer/Footer'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Careers = () => {
+
+
   return (
     <div>
         <div className="bg-black h-[340px] lg:h-[515px] 2xl:h-[656px] Careers-bod1 Careers-shad1 mb-[5rem]">
-            <div className="md:pt-[0.7rem]">
-            <Navbar />
+            <div className=" flex justify-center items-center">
+            <div className=" fixed w-full md:w-[90%] top-0  md:top-[2rem] md:rounded-[20px] h-[90px] overflow-hidden">
+            <Navbar className=''/>
+            </div>
             </div>
 
             <div className="flex flex-col items-center text-white mt-[5rem] md:mt-[8rem]">
                 <p className="ral-700 text-[37px] md:text-[70px] 2xl:text-[100px] ">Join our Journey</p>
-                <p className="ral-400 text-[13px] lg:text-[26px] 2xl:text-[32px] leading-[18px] md:leading-[26px] 2xl:leading-[36px] w-[330px] md::w-[800px] text-center 2xl:w-[963px]">Be a part of the talented team driving our innovative efforts and contribute to shaping the future.</p>
+                <p className="ral-400 text-[13px] lg:text-[26px] 2xl:text-[32px] leading-[18px] md:leading-[26px] 2xl:leading-[36px] w-[330px] md:w-[800px] text-center 2xl:w-[963px]">Be a part of the talented team driving our innovative efforts and contribute to shaping the future.</p>
             </div>
 
             <div className="w-full flex justify-center ">

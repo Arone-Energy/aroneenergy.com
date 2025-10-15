@@ -19,21 +19,18 @@ const Home = () => {
 
   return (
     <>
-            <div className="mt-[3.3rem] md:mt-[3rem] overflow-hidden">
-                <div className="relative">
+            <div className="mt-[3.3rem] md:mt-[5rem] lg:mt-[6rem] overflow-hidden">
+                <div className="relative ">
                 <img src={HomePic} alt="" className='w-full' />
+                <div className="absolute inset-0 bg-green-600/30 "></div>
                 <div className="absolute top-0 w-full">
-                    <div className="md:py-[6rem] lg:py-[10rem] px-[2rem] w-full">
+                    <div className="md:py-[3rem] lg:py-[5rem] px-[1rem] sm:px-[2rem] lg:px-[5rem] w-full">
 
-                    <div className="w-full max-md:mt-[1rem] flex justify-center md:justify-end">
-                        <div className="justify-self-end bod1 w-[160px] h-[40px] md:w-[210px] md:h-[65px] lg:w-[280px] lg:h-[90px]  xl:w-[389px] xl:h-[113px] rounded-[15px] md:rounded-[19px] flex items-center justify-center text-white fnt-700 text-[20px] md:text-[25px] lg:text-[35px] xl:text-[40px] 2xl:text-[45px]">Luminar 2.0</div>
+                    <div className="w-full max-md:mt-[1rem] flex justify-end">
+                        <div className="justify-self-end bod1 w-[100px] h-[30px] sm:w-[160px] sm:h-[40px] md:w-[210px] md:h-[65px] lg:w-[230px] lg:h-[74px] xl:w-[250px] xl:h-[80px]  2xl:w-[389px] 2xl:h-[113px] rounded-[10px] sm:rounded-[15px] md:rounded-[19px] flex items-center justify-center text-white fnt-700 text-[15px] sm:text-[18px] md:text-[25px] lg:text-[35px] 2xl:text-[45px]">Luminar 2.0</div>
                     </div>
                 
-                    <div className="w-full mt-[3rem] md:mt-[8rem] lg:mt-[9rem]">
-                        <div className=" bod1 w-[290px] h-[80px] md:w-[210px] md:h-[140px] lg:w-[310px] lg:h-[160px]  xl:w-[389px] xl:h-[196px] rounded-[19px] flex items-center justify-center text-white fnt-500 text-[12.5px] md:text-[16px] lg:text-[20px] xl:text-[21px] ">
-                        <p className="w-[90%] h-[80%]">The all new Luminar has a refined selection of materials for superior performance, longetivity and everyday use</p>
-                        </div>
-                    </div>
+                
 
                 </div>
             </div>
@@ -112,7 +109,7 @@ const Home = () => {
                 <button className='Home-bod2 rounded-[21px] ral-500 text-[12px] md:text-[15px] 2xl:text-[19px] button-green w-[111px] h-[27px] md:w-[167.12px] 2xl:w-[189.9px] md:h-[40.12px] 2xl:h-[45.59px] text-white'>Get started</button>
             </div>
             
-            <div className="max-md:w-[90%] max-md:mx-auto">
+            <div className="max-md:w-[90%] flex md:justify-end">
                 <img src={Repair} alt="" className=''/>
             </div> 
 
