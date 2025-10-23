@@ -52,7 +52,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between md:hidden h-[53px] px-[1rem] border-b-gray-300 border-b-[1px] bg-white ">
     
     <div className="">
-    <Link to='/'><img src={Logo} alt="" className='h-[27px]' /></Link>
+    <Link to='/'><img src={Logo} alt="" className='h-[30px]' /></Link>
      </div>
 
      <div className=" md:hidden">
