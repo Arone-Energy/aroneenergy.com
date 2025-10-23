@@ -50,13 +50,13 @@ const Navbar = () => {
 
 
     {/* Mobile Menu */}
-    <div className="flex items-center md:hidden h-[53px] px-[1rem] border-b-gray-300 border-b-[1px] bg-white ">
+    <div className="flex items-center justify-between md:hidden h-[53px] px-[1rem] border-b-gray-300 border-b-[1px] bg-white ">
     
     <div className="">
-    <Link to='/'><img src={Logo} alt="" className='w-[76.8px] h-[23px]' /></Link>
+    <Link to='/'><img src={Logo} alt="" className='w-full h-[27px]' /></Link>
      </div>
 
-     <div className="w-full md:hidden">
+     <div className=" md:hidden">
           <div className="  flex justify-end ">
             <button
               className="focus:outline-none flex items-center "
