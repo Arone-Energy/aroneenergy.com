@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet-async";
 import './Usage.css'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
@@ -6,6 +7,13 @@ import Footer from '../../components/footer/Footer'
 const Usage = () => {
   return (
     <div>
+      <Helmet>
+  <title>How to Use Arone Energy Solar Products | Solar Inverters & Generators in Nigeria</title>
+  <meta name="description" content="Learn how to properly use and maintain Arone Energy solar products, inverters, and solar generators. Optimize energy efficiency with sustainable and renewable energy solutions in Nigeria." />
+  <meta name="keywords" content="Solar product usage Nigeria, How to use solar generators, Solar inverters installation guide, Renewable energy solutions Nigeria" />
+  <link rel="canonical" href="https://www.aroneenergy.com/usage" />
+</Helmet>
+
         <div>
         <div className="bg-black  usage-bod1 usage-shad1">
             <div className=" flex justify-center items-center">

@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react'
+import { Helmet } from "react-helmet-async";
 import './Home.css'
 import LuminarVideo from '../../assets/Arone_Energy.mp4'
 import Investor from '../../assets/investor.png'
@@ -17,8 +18,38 @@ const Home = () => {
         }
     }, [])
 
+
   return (
     <>
+     <Helmet>
+        <title>Arone Energy | Solar & Inverter Solutions in Nigeria</title>
+        <meta
+          name="description"
+          content="Arone Energy provides solar panels, inverters, and renewable power solutions for homes and businesses in Nigeria."
+        />
+        <link rel="canonical" href="https://www.aroneenergy.com" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Arone Energy",
+            "url": "https://www.aroneenergy.com",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Arone Energy",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.aroneenergy.com/AroneLogo.png"
+              }
+            },
+            "sameAs": [
+            "https://www.instagram.com/aroneenergy",
+            "https://x.com/aroneenergy"
+            ],
+          })}
+        </script>
+      </Helmet>
             <div className="mt-[3.3rem] md:mt-[5rem] lg:mt-[6rem] overflow-hidden">
                 <div className="relative ">
                 <img src={HomePic} alt="" className='w-full' />

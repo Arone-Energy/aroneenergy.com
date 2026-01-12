@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet-async";
 import './TandC.css'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
@@ -6,6 +7,13 @@ import Footer from '../../components/footer/Footer'
 const Usage = () => {
   return (
     <div>
+      <Helmet>
+  <title>Arone Energy Terms & Conditions | Solar Inverters & Sustainable Energy Nigeria</title>
+  <meta name="description" content="Read Arone Energy's Terms & Conditions for solar products, inverters, and renewable energy solutions in Nigeria. Understand your rights and obligations." />
+  <meta name="keywords" content="Arone Energy T&C, Solar product legal terms Nigeria, Renewable energy terms and conditions" />
+  <link rel="canonical" href="https://www.aroneenergy.com/tandc" />
+</Helmet>
+
         <div>
         <div className="bg-black  tc-bod1 tc-shad1">
             <div className=" flex justify-center items-center">

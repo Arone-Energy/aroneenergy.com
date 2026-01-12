@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet-async";
 import './Careers.css'
 import Navbar from '../../components/navbar/Navbar'
 import Pic1 from '../../assets/careerPic1.png'
@@ -16,6 +17,11 @@ const Careers = () => {
 
   return (
     <div>
+        <Helmet>
+  <title>Careers at Arone Energy</title>
+  <meta name="description" content="Join the Arone Energy team and build the future of renewable energy in Nigeria." />
+  <link rel="canonical" href="https://www.aroneenergy.com/careers" />
+</Helmet>
         <div className="bg-black h-[340px] lg:h-[515px] 2xl:h-[656px] Careers-bod1 Careers-shad1 mb-[5rem]">
             <div className=" flex justify-center items-center">
             <div className=" fixed w-full md:w-[90%] top-0  md:top-[2rem] md:rounded-[20px] h-[90px] overflow-hidden">

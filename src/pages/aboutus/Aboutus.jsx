@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet-async";
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import AboutBG from '../../assets/aboutBG.png'
@@ -8,6 +9,14 @@ import './Aboutus.css'
 const Aboutus = () => {
   return (
     <div>
+    <Helmet>
+        <title>About Us | Arone Energy</title>
+        <meta
+            name="description"
+            content="Learn about Arone Energy's mission to deliver affordable renewable energy solutions in Nigeria."
+        />
+        <link rel="canonical" href="https://www.aroneenergy.com/aboutus" />
+    </Helmet>
         <div className="w-full">
         <div className='relative mb-[5rem]'>
             <img src={AboutBG} alt="" className='About-bod1 w-full hidden md:block' />

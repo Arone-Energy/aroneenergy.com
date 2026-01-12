@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet-async";
 import './Warranty.css'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
@@ -6,6 +7,13 @@ import Footer from '../../components/footer/Footer'
 const Warranty = () => {
   return (
     <div>
+        <Helmet>
+  <title>Arone Energy Product Warranty | Solar Inverters & Generators in Nigeria</title>
+  <meta name="description" content="Explore Arone Energy's warranty policies for solar inverters, solar generators, and other renewable energy solutions in Nigeria. Enjoy peace of mind with our quality assurance." />
+  <meta name="keywords" content="Solar inverter warranty Nigeria, Renewable energy product guarantee, Solar generator warranty Nigeria" />
+  <link rel="canonical" href="https://www.aroneenergy.com/warranty" />
+</Helmet>
+
         <div>
         <div className="bg-black  warranty-bod1 warranty-shad1">
             <div className=" flex justify-center items-center">

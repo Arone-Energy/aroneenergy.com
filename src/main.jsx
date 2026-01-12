@@ -7,6 +7,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
 import Careers from './pages/careers/Careers.jsx';
 import Aboutus from './pages/aboutus/Aboutus.jsx';
@@ -42,5 +43,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <HelmetProvider>
+    <RouterProvider router={router} />
+  </HelmetProvider>
 );
