@@ -14,6 +14,7 @@ const Warranty = () => {
   <link rel="canonical" href="https://www.aroneenergy.com/warranty" />
 </Helmet>
 
+
         <div>
         <div className="bg-black  warranty-bod1 warranty-shad1">
             <div className=" flex justify-center items-center">
