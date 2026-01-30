@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import { Helmet } from "react-helmet-async";
+import {useNavigate} from "react-router-dom";
 import './Home.css'
 import LuminarVideo from '../../assets/Arone_Energy.mp4'
 import Investor from '../../assets/investor.png'
@@ -11,6 +12,8 @@ import Core from '../../assets/core.png'
 
 const Home = () => {
     const videoRef = useRef(null);
+
+    const navigate = useNavigate();
 
     useEffect(()=>{
         if (videoRef.current) {
@@ -58,7 +61,7 @@ const Home = () => {
                     <div className="md:py-[3rem] lg:py-[5rem] px-[1rem] sm:px-[2rem] lg:px-[5rem] w-full">
 
                     <div className="w-full max-md:mt-[1rem] flex justify-end">
-                        <div className="justify-self-end bod1 w-[100px] h-[30px] sm:w-[160px] sm:h-[40px] md:w-[210px] md:h-[65px] lg:w-[230px] lg:h-[74px] xl:w-[250px] xl:h-[80px]  2xl:w-[389px] 2xl:h-[113px] rounded-[10px] sm:rounded-[15px] md:rounded-[19px] flex items-center justify-center text-white fnt-700 text-[15px] sm:text-[18px] md:text-[25px] lg:text-[35px] 2xl:text-[45px]">Luminar 2.0</div>
+                        <div className="justify-self-end bod1 w-[100px] h-[30px] sm:w-[160px] sm:h-[40px] md:w-[210px] md:h-[65px] lg:w-[230px] lg:h-[74px] xl:w-[250px] xl:h-[80px]  2xl:w-[389px] 2xl:h-[113px] rounded-[10px] sm:rounded-[15px] md:rounded-[19px] flex items-center justify-center text-white fnt-700 text-[15px] sm:text-[18px] md:text-[25px] lg:text-[35px] 2xl:text-[45px]">Luminar 3.0</div>
                     </div>
                 
                 
@@ -113,20 +116,20 @@ const Home = () => {
         <div className="my-[3rem] md:my-[1rem] w-full flex flex-col items-center text-center">
             <div className="w-[80%] md:w-[659px] flex flex-col gap-[1rem] md:gap-[1.5rem] items-center text-[#0BAC67]">
                 <p className="fnt-600 text-[18px] md:text-[38px] lg:text-[42px] 2xl:text-[48px]">Longer Lifespan</p>
-                <p className='fnt-400 text-[14px] md:text-[23px] lg:text-[28px] 2xl:text-[32px] leading-[22px] md:leading-[26px] lg:leading-[33px] md:w-[550px]' >The Luminar 2.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
+                <p className='fnt-400 text-[14px] md:text-[23px] lg:text-[28px] 2xl:text-[32px] leading-[22px] md:leading-[26px] lg:leading-[33px] md:w-[550px]' >The Luminar 3.0 includes a higher grade lithium battery for continuous power use, greater life span while delivering greater battery capacity.</p>
             </div>
         </div>
 
-        <div className="w-full px-[1rem] md:px-[3rem] lg:px-[3rem] mt-[7rem] space-y-[5rem]">
+        <div className="w-full px-[1rem] md:px-[3rem] lg:px-[5rem] mt-[7rem] space-y-[5rem]">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-[1rem] md:gap-[4rem]">
-            <div className="max-md:w-[90%] max-md:mx-auto">
+            <div className="w-[90%] xl:w-[80%] 2xl:w-[90%] max-md:mx-auto">
                 <img src={Investor} alt="" className=''/>
             </div>            
 
             <div className=" my-auto max-md:text-center">
                 <p className="fnt-700 text-[22px] md:text-[25px] lg:text-[32px] 2xl:text-[36px] max-md:w-[90%] mb-[1rem]">Be An Investor</p>
                 <p className="fnt-400 text-[13px] md:text-[17px] lg:text-[21px] 2xl:text-[24px] w-[90%] md:w-[300px] lg:w-[435px] mb-[1rem] ">Start your investment journey today. Explore Luminar world of investing and unlock new possibilities</p>
-                <button className='Home-bod2 rounded-[21px] ral-500 text-[12px] md:text-[15px] 2xl:text-[19px] button-green w-[111px] h-[27px] md:w-[167.12px] 2xl:w-[189.9px] md:h-[40.12px] 2xl:h-[45.59px] text-white'>Get started</button>
+                <button onClick={()=>navigate('/investors')} className='cursor-pointer Home-bod2 rounded-[21px] ral-500 text-[12px] md:text-[15px] 2xl:text-[19px] button-green w-[111px] h-[27px] md:w-[167.12px] 2xl:w-[189.9px] md:h-[40.12px] 2xl:h-[45.59px] text-white'>Get started</button>
             </div>
 
 
@@ -134,13 +137,13 @@ const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-[1rem] md:gap-[4rem]">
 
-            <div className=" my-auto max-md:text-center">
+            <div className=" my-auto max-md:text-center xl:pl-[2rem]">
                 <p className="fnt-700 text-[22px] md:text-[25px] lg:text-[32px] 2xl:text-[36px] mb-[1rem] max-md:w-[90%]">Repair and Maintenance</p>
                 <p className="fnt-400 text-[13px] md:text-[17px] lg:text-[21px] 2xl:text-[24px] w-[90%] md:w-[300px] lg:w-[435px] mb-[1rem] ">Submit yor complaints about the product, we are wiling to make improvements that suits your taste</p>
-                <button className='Home-bod2 rounded-[21px] ral-500 text-[12px] md:text-[15px] 2xl:text-[19px] button-green w-[111px] h-[27px] md:w-[167.12px] 2xl:w-[189.9px] md:h-[40.12px] 2xl:h-[45.59px] text-white'>Get started</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeh7C9qMC0MoMk6qAX81gbdJ5A9W0GYOREEoHmOrrXo8yMvJQ/viewform?usp=share_link"><button className='cursor-pointer Home-bod2 rounded-[21px] ral-500 text-[12px] md:text-[15px] 2xl:text-[19px] button-green w-[111px] h-[27px] md:w-[167.12px] 2xl:w-[189.9px] md:h-[40.12px] 2xl:h-[45.59px] text-white'>Get started</button></a>
             </div>
             
-            <div className="max-md:w-[90%] flex md:justify-end">
+            <div className="w-[90%] xl:w-[80%] 2xl:w-[90%] flex md:justify-self-end">
                 <img src={Repair} alt="" className=''/>
             </div> 
 

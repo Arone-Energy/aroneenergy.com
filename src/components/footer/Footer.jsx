@@ -50,7 +50,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] xl:text-[24px]">Copyright @aroneenergy 2025</div>
+            <div className="text-white bod ral-400 text-[13px] md:text-[21.12px] xl:text-[24px]">Copyright @aroneenergy 2026</div>
         </div>
     </div>
   )
