@@ -6,7 +6,7 @@ import LuminarVideo from '../../assets/Arone_Energy.mp4'
 import Investor from '../../assets/investor.png'
 import Repair from '../../assets/repair.png'
 import HomePic from '../../assets/HomePic.png'
-import Luminar from '../../assets/Luminar.png'
+import Luminar from '../../assets/Luminar3.png'
 import Shadow from '../../assets/shadow.png'
 import Core from '../../assets/core.png'
 
@@ -102,9 +102,9 @@ const Home = () => {
             <div className="w-full  mt-[5rem] lg:mt-[7rem] xl:mt-[15rem]">
             <div className="w-full flex flex-col items-center ">
                 <div className="relative w-full flex justify-center">
-                    <img src={Luminar} alt="" className='w-[60%] ' />
-                    <div className="absolute top-1/2 -translate-y-1/2 ">
-                    <p className="ral-900 text-[65px] md:text-[145px] lg:text-[180px] xl:text-[210px] 2xl:text-[250px] luminar">LUMINAR</p>
+                    <img src={Luminar} alt="" className='w-[50%] ' />
+                    <div className="absolute top-[3rem] sm:top-[4rem] md:top-[7rem] lg:top-[10.5rem] xl:top-[12rem]">
+                    <p className="ral-900 text-[65px] md:text-[135px] lg:text-[180px] xl:text-[210px] 2xl:text-[250px] luminar">LUMINAR</p>
                     </div>
                 </div>
                 <div className="flex justify-center mt-[-20px] md:mt-[-3rem]">
@@ -154,8 +154,8 @@ const Home = () => {
             <img src={Core} alt="" />
                           
             <div className="w-[90%] md:w-[80%] flex justify-center items-center  mx-auto mt-[-14.7rem]  md:mt-[-12rem] rounded-[20px] overflow-hidden" >                   
-                <iframe src="https://player.vimeo.com/video/932751168?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4" className='w-full h-[280px] md:w-[840px] md:h-[600px] border-0' allowfullscreen  >
-                </iframe>       
+                <iframe src="https://player.vimeo.com/video/1161208110?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4" className='w-full h-[280px] md:w-[840px] md:h-[600px] border-0' allowfullscreen  >
+                </iframe>
             </div>
         </div>
         </div>
