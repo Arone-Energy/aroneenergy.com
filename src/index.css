@@ -110,3 +110,112 @@ font-style: normal;
       display: none;
   }
 }
+
+.wordmark {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: #1A3E6F;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            
+            font-weight: 600;
+            color: #1A3E6F;
+            margin-bottom: 0.5rem;
+            line-height: 0.75;
+        }
+
+        p {
+            
+            color: #1A3E6F;
+            opacity: 0.85;
+            margin-bottom: 1rem;
+        }
+
+        .cta {
+            display: inline-block;
+            background: #1A3E6F;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.575rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: opacity 0.2s ease;
+            margin-bottom: 1rem;
+        }
+
+        .cta:hover {
+            opacity: 0.88;
+        }
+
+        .secondary {
+            font-size: 0.9375rem;
+            color: #1A3E6F;
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+
+        .secondary a {
+            color: #1A3E6F;
+            text-decoration: underline;
+        }
+
+        .redirecting {
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-size: 0.9375rem;
+            font-style: italic;
+            color: #1A3E6F;
+            opacity: 0.65;
+        }
+
+        .redirecting::after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-left: 8px;
+            border: 2px solid #1A3E6F;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            opacity: 0.8;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .footer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(26, 62, 111, 0.15);
+            font-size: 0.8125rem;
+            color: #1A3E6F;
+            opacity: 0.6;
+            line-height: 1.7;
+        }
+
+        .footer .legal {
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+
+             @media (max-width: 480px) {
+            h1 {
+                font-size: 1.625rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .wordmark {
+                font-size: 1.625rem;
+                margin-bottom: 2rem;
+            }
+        }
