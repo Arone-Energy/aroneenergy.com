@@ -22,7 +22,7 @@ const steps = [
 export default function HowItWorksSection() {
   return (
     <section id="how" className="reveal bg-white px-4 sm:px-6 lg:px-12 pb-16 lg:pb-28 pt-4 lg:pt-8">
-      <SectionHeading eyebrow="How it works" title="Up and running in 3 steps." />
+      <SectionHeading title="Up and running in 3 steps." />
 
       <ol className="mt-12 lg:mt-14 grid grid-cols-1 md:grid-cols-3 border-t border-arone-lgray">
         {steps.map(({ number, title, description }) => (

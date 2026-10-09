@@ -104,7 +104,6 @@ export default function ProductsSection() {
   return (
     <section id="products" className="reveal bg-arone-lgray px-4 sm:px-6 lg:px-12 py-16 lg:py-28">
       <SectionHeading
-        eyebrow="Products"
         title="Choose your LUMINAR."
         intro="Three systems, one promise: power that stays on. Tell us what you need to run and we will recommend the right one."
       />

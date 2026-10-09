@@ -95,7 +95,6 @@ export default function WhySection() {
   return (
     <section id="why" className="reveal bg-white px-4 sm:px-6 lg:px-12 py-16 lg:py-28">
       <SectionHeading
-        eyebrow="Why LUMINAR"
         title="Energy you can depend on."
         intro="Clean, stable power that keeps your appliances running when the grid fails."
       />

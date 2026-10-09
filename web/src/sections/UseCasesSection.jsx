@@ -36,7 +36,7 @@ const useCases = [
 export default function UseCasesSection() {
   return (
     <section id="use-cases" className="reveal bg-white px-4 sm:px-6 lg:px-12 py-16 lg:py-28">
-      <SectionHeading eyebrow="Use cases" title="Built for the places that cannot go dark." />
+      <SectionHeading title="Built for the places that cannot go dark." />
 
       <div className="mt-12 lg:mt-14 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
         {useCases.map(({ tag, title, description, image }) => (

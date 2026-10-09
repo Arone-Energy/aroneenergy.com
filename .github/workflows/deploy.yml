@@ -1,0 +1,53 @@
+name: Deploy aroneenergy.com
+
+# Redeploys the site on the Hetzner server whenever the web app (or this
+# deploy setup) changes on master. Can also be run by hand from the Actions tab.
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'web/**'
+      - 'deploy/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+# Never run two deploys at once; a newer push waits for the current one.
+concurrency:
+  group: deploy-aroneenergy
+  cancel-in-progress: false
+
+jobs:
+  build-check:
+    # Fail fast on a broken build before touching the server.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  deploy:
+    needs: build-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run the deploy script on the server
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # The key is restricted on the server to running
+          # deploy/deploy-on-server.sh, so no command is passed here.
+          ssh -i ~/.ssh/deploy_key \
+              -o StrictHostKeyChecking=accept-new \
+              -o ConnectTimeout=20 \
+              root@"$DEPLOY_HOST"

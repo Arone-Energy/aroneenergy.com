@@ -9,7 +9,6 @@ export default function OrderSection() {
         <div>
           <SectionHeading
             onDark
-            eyebrow="Order"
             title="Ready to order?"
             intro="Tell us what you need to power and we will recommend the right LUMINAR for you."
           />
