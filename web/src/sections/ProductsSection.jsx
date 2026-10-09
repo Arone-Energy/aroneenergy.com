@@ -36,7 +36,7 @@ function ProductCard({ product }) {
       <h3 className="text-[1.5rem] font-bold tracking-[-0.01em] mb-1">{product.name}</h3>
       <p
         className={`text-[0.85rem] font-medium mb-6 ${
-          isFeatured ? 'text-white/70' : product.specsConfirmed ? 'text-arone-blue' : 'text-arone-dgray italic'
+          isFeatured ? 'text-white/70' : product.specsConfirmed ? 'text-arone-blue' : 'text-arone-dgray'
         }`}
       >
         {product.specLine}
@@ -50,7 +50,7 @@ function ProductCard({ product }) {
           height={product.image.height}
           loading="lazy"
           decoding="async"
-          className="w-full h-auto aspect-square object-cover mb-6"
+          className="w-full h-auto aspect-square object-cover mb-6 rounded-[4.4%]"
         />
       )}
 

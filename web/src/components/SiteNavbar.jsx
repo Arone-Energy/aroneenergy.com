@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import BrandLogo from './BrandLogo'
-import { GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
+import { GENERAL_ENQUIRY_WHATSAPP_LINK, CUSTOMER_LOGIN_URL } from '@/data/contact'
 
 // "/#id" works on the home page (same-document jump) and from any other
 // route (navigates home, then jumps).
@@ -71,7 +71,13 @@ export default function SiteNavbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 lg:gap-5">
+          <a
+            href={CUSTOMER_LOGIN_URL}
+            className="hidden sm:inline-block text-[0.8rem] font-medium text-arone-blue hover:text-arone-blueMid transition-colors"
+          >
+            Log in
+          </a>
           <a
             href={GENERAL_ENQUIRY_WHATSAPP_LINK}
             target="_blank"
@@ -126,6 +132,13 @@ export default function SiteNavbar() {
               className="mt-4 w-full max-w-[280px] text-center bg-white text-arone-blue py-4 text-base font-semibold tracking-wide"
             >
               Order on WhatsApp
+            </a>
+            <a
+              href={CUSTOMER_LOGIN_URL}
+              onClick={closeMobileMenu}
+              className="w-full max-w-[280px] text-center border border-white/40 text-white py-4 text-base font-medium tracking-wide"
+            >
+              Log in
             </a>
           </div>
 

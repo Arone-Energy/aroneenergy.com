@@ -6,8 +6,8 @@ import retailStoreImage from '@/assets/images/luminar-retail-store.webp'
 const useCases = [
   {
     tag: 'Homes',
-    title: 'Keep the house running.',
-    description: 'Lights, fans and everyday appliances stay on through power cuts, so evenings at home carry on as normal.',
+    title: 'Peaceful nights at home.',
+    description: 'When NEPA takes light, your fans keep turning, the lights stay on and the children keep studying. No gen to start, no noise to sleep through.',
     image: {
       src: familyKitchenImage,
       alt: 'Family cooking together in a lit kitchen on a rainy evening, with a LUMINAR unit on the wall',
@@ -15,8 +15,8 @@ const useCases = [
   },
   {
     tag: 'Security and critical sites',
-    title: 'Keep security running.',
-    description: 'Cameras, monitors and control rooms need power around the clock. LUMINAR keeps them on when the grid is not.',
+    title: 'Your cameras never go blind.',
+    description: 'Thieves wait for light to go. LUMINAR keeps your cameras, recorders and internet running through every outage, so your site is protected when it matters most.',
     image: {
       src: securityControlRoomImage,
       alt: 'Security control room with a wall of CCTV monitors and a LUMINAR unit mounted on the right',
@@ -24,8 +24,8 @@ const useCases = [
   },
   {
     tag: 'Businesses',
-    title: 'Keep your doors open.',
-    description: 'Shops, offices and clinics keep trading through outages, without paying for generator fuel.',
+    title: 'Keep selling when light goes.',
+    description: 'Keep your POS working, your shop lit and your customers served, without spending your profit on generator fuel.',
     image: {
       src: retailStoreImage,
       alt: 'Modern retail store at dusk with a LUMINAR unit mounted on the wall',
@@ -36,7 +36,7 @@ const useCases = [
 export default function UseCasesSection() {
   return (
     <section id="use-cases" className="reveal bg-white px-4 sm:px-6 lg:px-12 py-16 lg:py-28">
-      <SectionHeading title="Built for the places that cannot go dark." />
+      <SectionHeading title="Light goes. Life goes on." />
 
       <div className="mt-12 lg:mt-14 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
         {useCases.map(({ tag, title, description, image }) => (

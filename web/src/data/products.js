@@ -11,23 +11,35 @@
 import { buildWhatsAppLink } from './contact'
 import luminarMaxTileImage from '@/assets/images/luminar-hero-shot.webp'
 import luminarMegapackImage from '@/assets/images/luminar-megapack.webp'
+import luminarProImage from '@/assets/images/luminar-pro-unit.webp'
 
 export const products = [
   {
     id: 'luminar-pro',
     name: 'LUMINAR PRO',
-    audience: 'Coming soon',
-    // No confirmed specs exist yet. Do not fill these with guesses.
-    powerRating: null,
-    batteryCapacity: null,
-    specLine: 'Specifications coming soon',
-    specHighlights: [],
-    placeholderNote: 'Full specifications will be published once confirmed. Message us on WhatsApp to register your interest.',
-    specsConfirmed: false,
+    audience: 'For smaller homes and shops',
+    // Confirmed by the owner, 2026-10-10.
+    powerRating: '3kVA',
+    batteryCapacity: '500Wh to 1kWh',
+    specLine: '3kVA · 500Wh to 1kWh',
+    specHighlights: [
+      'Powers lights, fans and phone charging',
+      'Solar input compatible',
+      'Smart thermal management',
+      '5 to 7 year battery lifespan',
+    ],
+    placeholderNote: null,
+    specsConfirmed: true,
     featured: false,
-    image: null,
-    orderButtonLabel: 'Register interest on WhatsApp',
-    whatsappLink: buildWhatsAppLink("Hi Arone, I'm interested in the LUMINAR PRO."),
+    // Product render from assets/Luminar max  V4.0203.png, square-cropped.
+    image: {
+      src: luminarProImage,
+      alt: 'LUMINAR PRO unit, a black wall cabinet with a display, sockets and carry handles on top',
+      width: 985,
+      height: 985,
+    },
+    orderButtonLabel: 'Order on WhatsApp',
+    whatsappLink: buildWhatsAppLink("Hi Arone, I'm interested in ordering a LUMINAR PRO."),
   },
   {
     id: 'luminar-max',
@@ -60,10 +72,10 @@ export const products = [
     id: 'luminar-megapack',
     name: 'LUMINAR MEGAPACK',
     audience: 'For businesses and clinics',
-    // From aronetech.com/luminar. Owner must confirm before launch.
-    powerRating: '5 to 10kW',
+    // Confirmed by the owner, 2026-10-10.
+    powerRating: '5 to 10kVA',
     batteryCapacity: 'up to 40kWh',
-    specLine: '5 to 10kW · up to 40kWh',
+    specLine: '5 to 10kVA · up to 40kWh',
     specHighlights: [
       'Powers a full office, clinic or factory',
       'Handles heavy appliances',
@@ -72,8 +84,8 @@ export const products = [
       'Priority service support',
       '5 to 10 year battery lifespan',
     ],
-    placeholderNote: 'Specifications awaiting final confirmation.',
-    specsConfirmed: false,
+    placeholderNote: null,
+    specsConfirmed: true,
     featured: false,
     // Cropped from the owner's MEGAPACK poster (assets/megapack.png): the photo
     // area only, without the printed title and contact footer.

@@ -135,8 +135,8 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-white/60 text-[1rem] lg:text-[1.05rem] leading-[1.8] max-w-[480px] font-light mb-10">
-          LUMINAR delivers clean, stable energy for your home or business, so power cuts never stop you again.
-          Charge it when the grid is on. Run on it when the grid fails. Add solar and stop paying for generator fuel.
+          When light goes, your home stays on. No generator noise, no fumes, no fuel queues.
+          Just quiet, steady power.
         </p>
 
         <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4">

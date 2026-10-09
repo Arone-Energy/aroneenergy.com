@@ -14,6 +14,9 @@ export const COMPANY_LOCATION = 'Enugu, Nigeria'
 
 export const ARONETECH_URL = 'https://aronetech.com'
 
+// Customer portal sign-in (shared Arone platform).
+export const CUSTOMER_LOGIN_URL = 'https://app.aronetech.com/login'
+
 /** Builds a wa.me link that opens WhatsApp with a prefilled message. */
 export function buildWhatsAppLink(message) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
