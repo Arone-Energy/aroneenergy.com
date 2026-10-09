@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react'
+import { GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
+
 // Hero video lives in public/videos (served as-is, not bundled). Compressed
 // from assets/Luminar Max product video.mp4: 1080p, no audio, faststart.
 const HERO_VIDEO_URL = '/videos/luminar-max-product.mp4'
@@ -14,7 +16,44 @@ function prefersReducedMotion() {
     && window.matchMedia
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
-import { GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
+
+/**
+ * Autoplay a muted video reliably, and only while it is on screen.
+ *
+ * React does not write the `muted` attribute to the DOM, and Chrome refuses
+ * autoplay for a video it cannot see is muted, so the hero stayed on its
+ * poster in production. Setting the property and calling play() fixes that;
+ * the visibility observer also pauses it off screen to save data and battery.
+ *
+ * @param {{ current: HTMLVideoElement | null }} videoRef
+ */
+function useMutedAutoplayWhenVisible(videoRef) {
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return undefined
+    video.muted = true
+    if (prefersReducedMotion()) return undefined
+
+    const tryPlay = () => {
+      const playAttempt = video.play()
+      if (playAttempt && typeof playAttempt.catch === 'function') {
+        playAttempt.catch(() => {
+          // Autoplay blocked (for example by a data saver). The poster stays visible.
+        })
+      }
+    }
+    if (!('IntersectionObserver' in window)) {
+      tryPlay()
+      return undefined
+    }
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => (entry.isIntersecting ? tryPlay() : video.pause()),
+      { threshold: 0.25 },
+    )
+    visibilityObserver.observe(video)
+    return () => visibilityObserver.disconnect()
+  }, [videoRef])
+}
 
 /** Slow sine-wave lines behind the hero, same effect as aronetech.com. */
 function useHeroWaveCanvas(canvasRef) {
@@ -76,6 +115,8 @@ function useHeroWaveCanvas(canvasRef) {
 
 export default function HeroSection() {
   const canvasRef = useRef(null)
+  const heroVideoRef = useRef(null)
+  useMutedAutoplayWhenVisible(heroVideoRef)
   useHeroWaveCanvas(canvasRef)
 
   return (
@@ -129,6 +170,7 @@ export default function HeroSection() {
       <div className="relative z-10 px-4 sm:px-6 lg:pl-0 lg:pr-12 pb-14 lg:py-20">
         <figure className="relative border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
           <video
+            ref={heroVideoRef}
             className="block w-full h-auto aspect-[16/9] object-cover bg-arone-blue"
             poster={HERO_VIDEO_POSTER_URL}
             autoPlay={!prefersReducedMotion()}

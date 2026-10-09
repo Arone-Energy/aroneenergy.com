@@ -43,6 +43,23 @@ git -C "$REPO_DIR" fetch --quiet origin master
 git -C "$REPO_DIR" reset --quiet --hard origin/master
 log "At commit $(git -C "$REPO_DIR" log -1 --format='%h %s')"
 
+# This repo stores every .mp4 with Git LFS (.gitattributes). Without LFS the
+# checkout holds ~130-byte pointer files instead of the videos, and the site
+# ships a "video" no browser can play. Fetch the real files, and refuse to
+# deploy if any web/ video is still a pointer.
+if ! git -C "$REPO_DIR" lfs version >/dev/null 2>&1; then
+  log "git-lfs is not installed (apt install git-lfs); refusing to deploy pointer files"
+  exit 1
+fi
+git -C "$REPO_DIR" lfs pull --include="web/**"
+for video_file in "$REPO_DIR"/web/public/videos/*.mp4; do
+  [ -e "$video_file" ] || continue
+  if head -c 64 "$video_file" | grep -q "git-lfs.github.com/spec"; then
+    log "$(basename "$video_file") is still an LFS pointer; refusing to deploy"
+    exit 1
+  fi
+done
+
 # Keep the running image as a rollback point before building over the tag.
 if docker image inspect "${IMAGE_NAME}:latest" >/dev/null 2>&1; then
   docker tag "${IMAGE_NAME}:latest" "${IMAGE_NAME}:previous"
