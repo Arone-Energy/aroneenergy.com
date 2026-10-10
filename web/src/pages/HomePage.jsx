@@ -55,6 +55,8 @@ export default function HomePage() {
         </main>
         <SiteFooter />
         <FloatingCallButton />
+        {/* Room under the footer on phones so the floating call button never covers it */}
+        <div aria-hidden="true" className="h-20 md:hidden bg-arone-blue" />
       </div>
     </>
   )

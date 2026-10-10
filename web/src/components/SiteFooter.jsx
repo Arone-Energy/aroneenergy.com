@@ -1,3 +1,5 @@
+import { LuPhone, LuMail, LuMapPin } from 'react-icons/lu'
+import { FaWhatsapp, FaInstagram, FaLinkedinIn, FaXTwitter, FaFacebookF, FaTiktok } from 'react-icons/fa6'
 import BrandLogo from './BrandLogo'
 import { NAV_LINKS } from './SiteNavbar'
 import {
@@ -5,12 +7,18 @@ import {
   COMPANY_LOCATION,
   COMPANY_NAME,
   CONTACT_EMAIL,
-  GENERAL_ENQUIRY_WHATSAPP_LINK,
-  INSTAGRAM_HANDLE,
-  INSTAGRAM_URL,
-  WHATSAPP_DISPLAY,
+  SOCIAL_LINKS,
   CALL_LINES,
 } from '@/data/contact'
+
+// Brand marks for the social accounts in SOCIAL_LINKS.
+const SOCIAL_ICONS = {
+  instagram: FaInstagram,
+  linkedin: FaLinkedinIn,
+  x: FaXTwitter,
+  facebook: FaFacebookF,
+  tiktok: FaTiktok,
+}
 
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear()
@@ -47,30 +55,54 @@ export default function SiteFooter() {
         {/* Contact */}
         <div>
           <div className="text-[0.65rem] uppercase tracking-[0.2em] text-white/30 font-medium mb-4">Contact</div>
-          <ul className="flex flex-col gap-3 text-[0.8rem] text-white/50">
-            {CALL_LINES.map((line) => (
-              <li key={line.tel}>
-                <a href={line.link} className="hover:text-white transition-colors">
-                  Call: {line.display}
-                </a>
-              </li>
-            ))}
-            <li>
-              <a href={GENERAL_ENQUIRY_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                WhatsApp: {WHATSAPP_DISPLAY}
-              </a>
+          <ul className="flex flex-col gap-3.5 text-[0.8rem] text-white/50">
+            {/* Both lines take calls and WhatsApp: one line, comma separated. */}
+            <li className="flex items-start gap-3">
+              <span className="flex items-center gap-1.5 shrink-0 mt-[1px] text-white/70" aria-hidden="true">
+                <LuPhone className="w-4 h-4" />
+                <FaWhatsapp className="w-4 h-4" />
+              </span>
+              <span>
+                <span className="sr-only">Call or WhatsApp: </span>
+                {CALL_LINES.map((line, index) => (
+                  <span key={line.tel}>
+                    {index > 0 && ', '}
+                    <a href={line.link} className="whitespace-nowrap hover:text-white transition-colors">
+                      {line.display}
+                    </a>
+                  </span>
+                ))}
+              </span>
             </li>
-            <li>
+            <li className="flex items-start gap-3">
+              <LuMail aria-hidden="true" className="w-4 h-4 shrink-0 mt-[1px] text-white/70" />
               <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-white transition-colors">
                 {CONTACT_EMAIL}
               </a>
             </li>
-            <li>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                Instagram: {INSTAGRAM_HANDLE}
-              </a>
+            <li className="flex items-start gap-3 text-white/35">
+              <LuMapPin aria-hidden="true" className="w-4 h-4 shrink-0 mt-[1px] text-white/70" />
+              {COMPANY_LOCATION}
             </li>
-            <li className="text-white/35">{COMPANY_LOCATION}</li>
+            <li>
+              <div className="flex items-center gap-3 pt-1">
+                {SOCIAL_LINKS.map(({ network, label, url }) => {
+                  const Icon = SOCIAL_ICONS[network]
+                  return (
+                    <a
+                      key={network}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Arone Energy on ${label}`}
+                      className="w-9 h-9 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:text-white hover:border-white/60 transition-colors"
+                    >
+                      <Icon className="w-4 h-4" aria-hidden="true" />
+                    </a>
+                  )
+                })}
+              </div>
+            </li>
           </ul>
         </div>
       </div>

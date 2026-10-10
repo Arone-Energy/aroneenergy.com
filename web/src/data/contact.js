@@ -19,6 +19,13 @@ export const CONTACT_EMAIL = 'info@aroneenergy.com'
 export const INSTAGRAM_URL = 'https://www.instagram.com/aroneenergy'
 export const INSTAGRAM_HANDLE = '@aroneenergy'
 
+// Social accounts shown as icons in the footer, in this order. Add LinkedIn,
+// X, Facebook or TikTok here once their Arone Energy links are confirmed;
+// `network` picks the icon ('instagram', 'linkedin', 'x', 'facebook', 'tiktok').
+export const SOCIAL_LINKS = [
+  { network: 'instagram', label: 'Instagram', url: INSTAGRAM_URL },
+]
+
 export const COMPANY_NAME = 'Arone Energy Industries Limited'
 export const COMPANY_LOCATION = 'Enugu, Nigeria'
 
