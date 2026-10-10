@@ -84,25 +84,24 @@ export default function SiteFooter() {
               <LuMapPin aria-hidden="true" className="w-4 h-4 shrink-0 mt-[1px] text-white/70" />
               {COMPANY_LOCATION}
             </li>
-            <li>
-              <div className="flex items-center gap-3 pt-1">
-                {SOCIAL_LINKS.map(({ network, label, url }) => {
-                  const Icon = SOCIAL_ICONS[network]
-                  return (
-                    <a
-                      key={network}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Arone Energy on ${label}`}
-                      className="w-9 h-9 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:text-white hover:border-white/60 transition-colors"
-                    >
-                      <Icon className="w-4 h-4" aria-hidden="true" />
-                    </a>
-                  )
-                })}
-              </div>
-            </li>
+            {/* One row per social account, aligned with the rows above */}
+            {SOCIAL_LINKS.map(({ network, label, url, handle }) => {
+              const Icon = SOCIAL_ICONS[network]
+              return (
+                <li key={network}>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Arone Energy on ${label}: ${handle}`}
+                    className="flex items-start gap-3 hover:text-white transition-colors"
+                  >
+                    <Icon aria-hidden="true" className="w-4 h-4 shrink-0 mt-[1px] text-white/70" />
+                    {handle}
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>

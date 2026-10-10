@@ -21,9 +21,10 @@ export const INSTAGRAM_HANDLE = '@aroneenergy'
 
 // Social accounts shown as icons in the footer, in this order. Add LinkedIn,
 // X, Facebook or TikTok here once their Arone Energy links are confirmed;
-// `network` picks the icon ('instagram', 'linkedin', 'x', 'facebook', 'tiktok').
+// `network` picks the icon ('instagram', 'linkedin', 'x', 'facebook', 'tiktok');
+// `handle` is the text shown beside it.
 export const SOCIAL_LINKS = [
-  { network: 'instagram', label: 'Instagram', url: INSTAGRAM_URL },
+  { network: 'instagram', label: 'Instagram', url: INSTAGRAM_URL, handle: INSTAGRAM_HANDLE },
 ]
 
 export const COMPANY_NAME = 'Arone Energy Industries Limited'
