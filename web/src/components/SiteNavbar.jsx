@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import BrandLogo from './BrandLogo'
+import PhoneIcon from './PhoneIcon'
 import {
   GENERAL_ENQUIRY_WHATSAPP_LINK,
   CUSTOMER_LOGIN_URL,
-  CUSTOMER_CARE_PHONE_DISPLAY,
-  CUSTOMER_CARE_PHONE_LINK,
+  PRIMARY_CALL_LINE,
 } from '@/data/contact'
 
 // "/#id" works on the home page (same-document jump) and from any other
@@ -16,14 +16,6 @@ export const NAV_LINKS = [
   { label: 'How it works', href: '/#how' },
   { label: 'Contact', href: '/#contact' },
 ]
-
-function PhoneIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
-    </svg>
-  )
-}
 
 function MenuIcon({ isOpen }) {
   return (
@@ -85,17 +77,15 @@ export default function SiteNavbar() {
         </div>
 
         <div className="flex items-center gap-3 lg:gap-5">
-          {/* Customer care line: number on wide screens, a tap-to-call icon on phones */}
-          {CUSTOMER_CARE_PHONE_LINK && (
-            <a
-              href={CUSTOMER_CARE_PHONE_LINK}
-              aria-label={`Call customer care on ${CUSTOMER_CARE_PHONE_DISPLAY}`}
-              className="flex items-center gap-2 text-[0.8rem] font-medium text-arone-blue hover:text-arone-blueMid transition-colors"
-            >
-              <PhoneIcon />
-              <span className="hidden lg:inline">{CUSTOMER_CARE_PHONE_DISPLAY}</span>
-            </a>
-          )}
+          {/* Main call line: the number on wide screens, a tap-to-call icon on phones */}
+          <a
+            href={PRIMARY_CALL_LINE.link}
+            aria-label={`Call Arone Energy on ${PRIMARY_CALL_LINE.display}`}
+            className="flex items-center gap-2 text-[0.8rem] font-medium text-arone-blue hover:text-arone-blueMid transition-colors"
+          >
+            <PhoneIcon />
+            <span className="hidden lg:inline">{PRIMARY_CALL_LINE.display}</span>
+          </a>
           <a
             href={CUSTOMER_LOGIN_URL}
             className="hidden sm:inline-block text-[0.8rem] font-medium text-arone-blue hover:text-arone-blueMid transition-colors"

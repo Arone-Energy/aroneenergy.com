@@ -1,10 +1,10 @@
 import SectionHeading from '@/components/SectionHeading'
+import PhoneIcon from '@/components/PhoneIcon'
 import operationsTileImage from '@/assets/images/luminar-unit.webp'
 import {
   EMAIL_ENQUIRY_LINK,
   GENERAL_ENQUIRY_WHATSAPP_LINK,
-  CUSTOMER_CARE_PHONE_DISPLAY,
-  CUSTOMER_CARE_PHONE_LINK,
+  CALL_LINES,
 } from '@/data/contact'
 
 export default function OrderSection() {
@@ -48,15 +48,20 @@ export default function OrderSection() {
             </div>
           </div>
 
-          {CUSTOMER_CARE_PHONE_LINK && (
-            <p className="mt-6 text-[0.9rem] text-white/60 font-light">
-              Prefer to talk? Call customer care on{' '}
-              <a href={CUSTOMER_CARE_PHONE_LINK} className="font-medium text-white underline underline-offset-4 decoration-white/40 hover:decoration-white">
-                {CUSTOMER_CARE_PHONE_DISPLAY}
+          {/* Call lines: many buyers want to talk before they order */}
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <span className="text-[0.9rem] text-white/60 font-light">Prefer to talk? Call us:</span>
+            {CALL_LINES.map((line) => (
+              <a
+                key={line.tel}
+                href={line.link}
+                className="inline-flex items-center gap-2 text-[1rem] font-medium text-white hover:text-white/80 transition-colors"
+              >
+                <PhoneIcon />
+                {line.display}
               </a>
-              .
-            </p>
-          )}
+            ))}
+          </div>
         </div>
 
         {/* Social tile with baked-in text, shown as a picture */}

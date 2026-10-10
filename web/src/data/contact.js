@@ -5,12 +5,15 @@
 export const WHATSAPP_NUMBER = '2347044556674'
 export const WHATSAPP_DISPLAY = '+234 704 455 6674'
 
-// Customer care line for calls and enquiries, shown in the navbar, the order
-// section and the footer. Leave null until the number is confirmed: nothing
-// shows while it is null. Example: '+2348012345678' and '+234 801 234 5678'.
-export const CUSTOMER_CARE_PHONE = null
-export const CUSTOMER_CARE_PHONE_DISPLAY = null
-export const CUSTOMER_CARE_PHONE_LINK = CUSTOMER_CARE_PHONE ? `tel:${CUSTOMER_CARE_PHONE}` : null
+// Customer care call lines, in order of priority. Shown in local format (what
+// Nigerian customers read and dial); the tel: link uses +234 so it also works
+// from abroad. The first line is the main one (also the WhatsApp number).
+export const CALL_LINES = [
+  { tel: '+2347044556674', display: '0704 455 6674' },
+  { tel: '+2349067710551', display: '0906 771 0551' },
+].map((line) => ({ ...line, link: `tel:${line.tel}` }))
+
+export const PRIMARY_CALL_LINE = CALL_LINES[0]
 
 export const CONTACT_EMAIL = 'info@aroneenergy.com'
 export const INSTAGRAM_URL = 'https://www.instagram.com/aroneenergy'

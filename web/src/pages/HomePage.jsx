@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import SiteNavbar from '@/components/SiteNavbar'
 import SiteFooter from '@/components/SiteFooter'
+import FloatingCallButton from '@/components/FloatingCallButton'
 import HeroSection from '@/sections/HeroSection'
 import WhySection from '@/sections/WhySection'
 import ProductsSection from '@/sections/ProductsSection'
@@ -53,6 +54,7 @@ export default function HomePage() {
           <OrderSection />
         </main>
         <SiteFooter />
+        <FloatingCallButton />
       </div>
     </>
   )

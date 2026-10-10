@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
-import { GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
+import { GENERAL_ENQUIRY_WHATSAPP_LINK, CALL_LINES } from '@/data/contact'
+import PhoneIcon from '@/components/PhoneIcon'
 import { products } from '@/data/products'
 
 // First LUMINAR shipped in 2021 (the company was incorporated in 2022), so the
@@ -162,7 +163,21 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-[0.8rem] text-white/60">
+        {/* Call lines right under the buttons, for visitors ready to talk now */}
+        <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-[0.9rem]">
+          <span className="inline-flex items-center gap-2 text-white/60">
+            <PhoneIcon className="w-4 h-4" />
+            Call us:
+          </span>
+          {/* No separators: when the lines wrap on phones, each number starts cleanly */}
+          {CALL_LINES.map((line) => (
+            <a key={line.tel} href={line.link} className="font-medium text-white hover:text-white/80 underline-offset-4 hover:underline">
+              {line.display}
+            </a>
+          ))}
+        </div>
+
+        <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[0.8rem] text-white/60">
           <li className="font-medium text-white">Proudly made in Nigeria</li>
           <li aria-hidden="true" className="text-white/30">/</li>
           <li>{YEARS_POWERING_HOMES} years powering homes</li>

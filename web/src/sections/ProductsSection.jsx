@@ -1,5 +1,6 @@
 import SectionHeading from '@/components/SectionHeading'
 import { products } from '@/data/products'
+import { PRIMARY_CALL_LINE } from '@/data/contact'
 
 function ProductCard({ product }) {
   const isFeatured = product.featured
@@ -95,6 +96,15 @@ function ProductCard({ product }) {
         }`}
       >
         {product.orderButtonLabel}
+      </a>
+      {/* Second way to buy, right where the decision is made */}
+      <a
+        href={PRIMARY_CALL_LINE.link}
+        className={`mt-3 block text-center text-[0.8rem] transition-colors ${
+          isFeatured ? 'text-white/70 hover:text-white' : 'text-arone-dgray hover:text-arone-blue'
+        }`}
+      >
+        or call <span className="font-medium underline underline-offset-4">{PRIMARY_CALL_LINE.display}</span>
       </a>
     </article>
   )
