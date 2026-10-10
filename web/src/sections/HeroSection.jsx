@@ -1,5 +1,11 @@
 import { useEffect, useRef } from 'react'
 import { GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
+import { products } from '@/data/products'
+
+// First LUMINAR shipped in 2021 (the company was incorporated in 2022), so the
+// "years powering homes" count is worked out from that and never goes stale.
+const FIRST_PRODUCT_YEAR = 2021
+const YEARS_POWERING_HOMES = new Date().getFullYear() - FIRST_PRODUCT_YEAR
 
 // Hero video lives in public/videos (served as-is, not bundled). Compressed
 // from source-assets/luminar-max-product-video.mp4: 1080p, no audio, faststart.
@@ -122,7 +128,7 @@ export default function HeroSection() {
   return (
     <section
       id="top"
-      className="relative bg-arone-blue overflow-hidden pt-[72px] lg:min-h-screen grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] items-center"
+      className="relative bg-arone-blue overflow-hidden pt-[72px] lg:min-h-screen grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] lg:grid-rows-[1fr_auto] items-center"
     >
       <canvas ref={canvasRef} aria-hidden="true" className="absolute inset-0 w-full h-full pointer-events-none" />
       {/* Faint grid, as on the aronetech.com hero */}
@@ -156,12 +162,12 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-[0.75rem] text-white/45">
+        <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-[0.8rem] text-white/60">
+          <li className="font-medium text-white">Proudly made in Nigeria</li>
+          <li aria-hidden="true" className="text-white/30">/</li>
+          <li>{YEARS_POWERING_HOMES} years powering homes</li>
+          <li aria-hidden="true" className="text-white/30">/</li>
           <li>Solar ready</li>
-          <li aria-hidden="true" className="text-white/30">/</li>
-          <li>Plug and play</li>
-          <li aria-hidden="true" className="text-white/30">/</li>
-          <li>Built in Nigeria</li>
         </ul>
       </div>
 
@@ -185,6 +191,36 @@ export default function HeroSection() {
           </video>
         </figure>
       </div>
+
+      {/* The LUMINAR line-up, so visitors see every product from the first screen.
+          Each one jumps to its card in the products section. */}
+      <ul className="relative z-10 lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 border-t border-white/10">
+        {products.map((product, index) => (
+          <li
+            key={product.id}
+            className={index < products.length - 1 ? 'border-b sm:border-b-0 sm:border-r border-white/10' : ''}
+          >
+            <a
+              href="#products"
+              className="group flex items-center gap-4 px-4 sm:px-6 lg:px-12 py-5 lg:py-6 hover:bg-white/5 transition-colors"
+            >
+              <img
+                src={product.image.src}
+                alt=""
+                width="64"
+                height="64"
+                loading="lazy"
+                decoding="async"
+                className="w-14 h-14 lg:w-16 lg:h-16 shrink-0 object-cover rounded-xl bg-white/5"
+              />
+              <span>
+                <span className="block text-white text-[0.95rem] font-bold tracking-[-0.01em]">{product.name}</span>
+                <span className="block text-white/50 text-[0.78rem]">{product.specLine}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

@@ -9,6 +9,8 @@ import {
   INSTAGRAM_HANDLE,
   INSTAGRAM_URL,
   WHATSAPP_DISPLAY,
+  CUSTOMER_CARE_PHONE_DISPLAY,
+  CUSTOMER_CARE_PHONE_LINK,
 } from '@/data/contact'
 
 export default function SiteFooter() {
@@ -47,6 +49,13 @@ export default function SiteFooter() {
         <div>
           <div className="text-[0.65rem] uppercase tracking-[0.2em] text-white/30 font-medium mb-4">Contact</div>
           <ul className="flex flex-col gap-3 text-[0.8rem] text-white/50">
+            {CUSTOMER_CARE_PHONE_LINK && (
+              <li>
+                <a href={CUSTOMER_CARE_PHONE_LINK} className="hover:text-white transition-colors">
+                  Call: {CUSTOMER_CARE_PHONE_DISPLAY}
+                </a>
+              </li>
+            )}
             <li>
               <a href={GENERAL_ENQUIRY_WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 WhatsApp: {WHATSAPP_DISPLAY}

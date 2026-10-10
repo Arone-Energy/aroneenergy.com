@@ -1,6 +1,11 @@
 import SectionHeading from '@/components/SectionHeading'
 import operationsTileImage from '@/assets/images/luminar-unit.webp'
-import { EMAIL_ENQUIRY_LINK, GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
+import {
+  EMAIL_ENQUIRY_LINK,
+  GENERAL_ENQUIRY_WHATSAPP_LINK,
+  CUSTOMER_CARE_PHONE_DISPLAY,
+  CUSTOMER_CARE_PHONE_LINK,
+} from '@/data/contact'
 
 export default function OrderSection() {
   return (
@@ -42,6 +47,16 @@ export default function OrderSection() {
               </a>
             </div>
           </div>
+
+          {CUSTOMER_CARE_PHONE_LINK && (
+            <p className="mt-6 text-[0.9rem] text-white/60 font-light">
+              Prefer to talk? Call customer care on{' '}
+              <a href={CUSTOMER_CARE_PHONE_LINK} className="font-medium text-white underline underline-offset-4 decoration-white/40 hover:decoration-white">
+                {CUSTOMER_CARE_PHONE_DISPLAY}
+              </a>
+              .
+            </p>
+          )}
         </div>
 
         {/* Social tile with baked-in text, shown as a picture */}
