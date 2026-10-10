@@ -5,8 +5,8 @@ import shopOwnerProvisionsImage from '@/assets/images/customer-shop-owner-provis
 import productionTeamImage from '@/assets/images/arone-energy-production-team.webp'
 
 // Real customers and the team that builds LUMINAR, as one row of equal-size
-// slides. Social proof after the use cases: the reader has just seen what
-// LUMINAR does, now they see who uses it and who stands behind it.
+// slides. Social proof straight after the hero, before the "why" section.
+// No bottom padding: the white section below supplies the gap.
 // Each image is shown uncropped with its own navy frame (brand navy #002A47).
 // The slide box is filled with the same navy, so images of different shapes
 // fit the same size without cropping and the fill blends into the frame.
@@ -82,11 +82,11 @@ export default function CustomersSection() {
   }
 
   return (
-    <section id="customers" className="reveal bg-white px-4 sm:px-6 lg:px-12 pb-16 lg:pb-28">
+    <section id="customers" className="reveal bg-white px-4 sm:px-6 lg:px-12 pt-16 lg:pt-28">
       <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-6">
         <SectionHeading
           title="Keeping businesses open through every outage."
-          intro="Shop owners no longer lose sales when light goes. Every LUMINAR is proudly made in Nigeria, by our team in Nsukka."
+          intro="Shop owners no longer lose sales when light goes. Every LUMINAR is proudly made in Nigeria."
         />
         {/* Only when the slides overflow; on wide screens all three fit. */}
         {(canScrollBack || canScrollForward) && (

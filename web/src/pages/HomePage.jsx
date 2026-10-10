@@ -44,10 +44,10 @@ export default function HomePage() {
         <SiteNavbar />
         <main>
           <HeroSection />
+          <CustomersSection />
           <WhySection />
           <ProductsSection />
           <UseCasesSection />
-          <CustomersSection />
           <TestimonialsSection />
           <HowItWorksSection />
           <OrderSection />
