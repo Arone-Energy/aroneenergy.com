@@ -31,7 +31,7 @@ export const products = [
     placeholderNote: null,
     specsConfirmed: true,
     featured: false,
-    // Product render from assets/Luminar max  V4.0203.png, square-cropped.
+    // Product render from source-assets/luminar-pro-render.png, square-cropped.
     image: {
       src: luminarProImage,
       alt: 'LUMINAR PRO unit, a black wall cabinet with a display, sockets and carry handles on top',
@@ -87,7 +87,7 @@ export const products = [
     placeholderNote: null,
     specsConfirmed: true,
     featured: false,
-    // Cropped from the owner's MEGAPACK poster (assets/megapack.png): the photo
+    // Cropped from the owner's MEGAPACK poster (source-assets/luminar-megapack-poster.png): the photo
     // area only, without the printed title and contact footer.
     image: {
       src: luminarMegapackImage,

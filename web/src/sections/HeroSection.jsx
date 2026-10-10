@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { GENERAL_ENQUIRY_WHATSAPP_LINK } from '@/data/contact'
 
 // Hero video lives in public/videos (served as-is, not bundled). Compressed
-// from assets/Luminar Max product video.mp4: 1080p, no audio, faststart.
+// from source-assets/luminar-max-product-video.mp4: 1080p, no audio, faststart.
 const HERO_VIDEO_URL = '/videos/luminar-max-product.mp4'
 const HERO_VIDEO_POSTER_URL = '/videos/luminar-max-product-poster.jpg'
 
