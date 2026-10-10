@@ -5,6 +5,7 @@ import HeroSection from '@/sections/HeroSection'
 import WhySection from '@/sections/WhySection'
 import ProductsSection from '@/sections/ProductsSection'
 import UseCasesSection from '@/sections/UseCasesSection'
+import CustomersSection from '@/sections/CustomersSection'
 import HowItWorksSection from '@/sections/HowItWorksSection'
 import OrderSection from '@/sections/OrderSection'
 import { useRevealOnScroll } from '@/hooks/useRevealOnScroll'
@@ -45,6 +46,7 @@ export default function HomePage() {
           <WhySection />
           <ProductsSection />
           <UseCasesSection />
+          <CustomersSection />
           <HowItWorksSection />
           <OrderSection />
         </main>
