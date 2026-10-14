@@ -86,8 +86,8 @@ const benefits = [
   },
   {
     Icon: CheckIcon,
-    title: 'Simple ownership',
-    description: 'Buy outright and own your system from day one. Speak to our team about available payment options.',
+    title: 'Flexible ownership',
+    description: 'Buy outright, pay in instalments, or share one system with neighbouring shops and pay only for the power you use. Ask us which suits you.',
   },
 ]
 
