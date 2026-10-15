@@ -14,6 +14,7 @@ export const NAV_LINKS = [
   { label: 'Products', href: '/#products' },
   { label: 'Why LUMINAR', href: '/#why' },
   { label: 'How it works', href: '/#how' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/#contact' },
 ]
 
