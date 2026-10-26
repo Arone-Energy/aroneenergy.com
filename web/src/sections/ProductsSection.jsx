@@ -52,6 +52,7 @@ function ProductCard({ product }) {
           loading="lazy"
           decoding="async"
           className="w-full h-auto aspect-square object-cover mb-6 rounded-[4.4%]"
+          style={product.image.position ? { objectPosition: product.image.position } : undefined}
         />
       )}
 

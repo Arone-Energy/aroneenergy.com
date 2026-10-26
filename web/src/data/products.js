@@ -9,9 +9,11 @@
 //   from approved marketing material (see the source note per product).
 
 import { buildWhatsAppLink } from './contact'
-import luminarMaxTileImage from '@/assets/images/luminar-hero-shot.webp'
-import luminarMegapackImage from '@/assets/images/luminar-megapack.webp'
-import luminarProImage from '@/assets/images/luminar-pro-unit.webp'
+// Product cards from the 2026-10-25 asset set (source: Claude/Assets/*card.png,
+// 4:5 renders on navy, shown square with the cabinet kept in frame).
+import luminarProImage from '@/assets/images/luminar-pro-card.webp'
+import luminarMaxImage from '@/assets/images/luminar-max-card.webp'
+import luminarMegapackImage from '@/assets/images/luminar-megapack-card.webp'
 
 export const products = [
   {
@@ -31,12 +33,12 @@ export const products = [
     placeholderNote: null,
     specsConfirmed: true,
     featured: false,
-    // Product render from source-assets/luminar-pro-render.png, square-cropped.
     image: {
       src: luminarProImage,
-      alt: 'LUMINAR PRO unit, a black wall cabinet with a display, sockets and carry handles on top',
-      width: 985,
-      height: 985,
+      alt: 'LUMINAR PRO, a silver upright cabinet with a display and a locking door',
+      width: 1000,
+      height: 1250,
+      position: 'center 75%',
     },
     orderButtonLabel: 'Order on WhatsApp',
     whatsappLink: buildWhatsAppLink("Hi Arone, I'm interested in ordering a LUMINAR PRO."),
@@ -60,10 +62,11 @@ export const products = [
     specsConfirmed: true,
     featured: true,
     image: {
-      src: luminarMaxTileImage,
-      alt: 'LUMINAR MAX unit mounted on a tiled wall, labelled 3kVA 2,000Wh',
-      width: 2000,
-      height: 2000,
+      src: luminarMaxImage,
+      alt: 'LUMINAR MAX, a white upright cabinet with a display and a locking door',
+      width: 1000,
+      height: 1250,
+      position: 'center 70%',
     },
     orderButtonLabel: 'Order on WhatsApp',
     whatsappLink: buildWhatsAppLink("Hi Arone, I'm interested in ordering a LUMINAR MAX."),
@@ -87,13 +90,12 @@ export const products = [
     placeholderNote: null,
     specsConfirmed: true,
     featured: false,
-    // Cropped from the owner's MEGAPACK poster (source-assets/luminar-megapack-poster.png): the photo
-    // area only, without the printed title and contact footer.
     image: {
       src: luminarMegapackImage,
-      alt: 'LUMINAR MEGAPACK unit in front of a clinic, a telecom tower and high-rise buildings',
-      width: 2000,
-      height: 1725,
+      alt: 'LUMINAR MEGAPACK, a wide dark cabinet with vented double doors',
+      width: 1000,
+      height: 1250,
+      position: 'center 80%',
     },
     orderButtonLabel: 'Order on WhatsApp',
     whatsappLink: buildWhatsAppLink("Hi Arone, I'm interested in ordering a LUMINAR MEGAPACK."),

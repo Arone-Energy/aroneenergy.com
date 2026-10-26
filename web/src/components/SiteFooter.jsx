@@ -25,7 +25,6 @@ export default function SiteFooter() {
 
   return (
     <footer className="bg-arone-blue">
-      {/* Gold accent top border */}
       <div className="h-[2px] bg-gradient-to-r from-transparent via-white to-transparent opacity-20" />
 
       <div className="px-4 sm:px-6 lg:px-12 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr] gap-10">

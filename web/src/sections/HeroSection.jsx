@@ -227,6 +227,7 @@ export default function HeroSection() {
                 loading="lazy"
                 decoding="async"
                 className="w-14 h-14 lg:w-16 lg:h-16 shrink-0 object-cover rounded-xl bg-white/5"
+                style={product.image.position ? { objectPosition: product.image.position } : undefined}
               />
               <span>
                 <span className="block text-white text-[0.95rem] font-bold tracking-[-0.01em]">{product.name}</span>

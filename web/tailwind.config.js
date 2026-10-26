@@ -17,8 +17,6 @@ export default {
     extend: {
       colors: {
         arone: {
-          gold: '#C89B2A',
-          goldSoft: 'rgba(200, 155, 42, 0.15)',
           blue: '#002A47',
           blueMid: '#003a63',
           black: '#000000',
